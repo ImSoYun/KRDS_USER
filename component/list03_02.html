@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+</head>
+
+<body>
+    <!-- 건너뛰기 링크 -->
+    <div id="krds-skip-link">
+        <a href="#breadcrumb">본문 바로가기</a>
+    </div>
+    <!-- //건너뛰기 링크 -->
+    <!-- masthead -->
+    <div id="krds-masthead">
+        <div class="toggle-wrap">
+            <div class="toggle-head">
+                <div class="inner">
+                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //masthead -->
+
+    <!-- header -->
+    <div id="headerWrap"></div>
+    <!-- //header -->
+
+    <div class="inner sub_content">
+        <!-- side navigation -->
+        <nav class="krds-side-navigation">
+            <h2 class="lnb-tit">컴포넌트</h2>
+            <!-- lnb-list -->
+            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
+            <!-- //lnb-list -->
+        </nav>
+        <!-- //side navigation -->
+
+        <div class="page_wrap">
+            <!-- breadcrumb -->
+            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
+
+            <div class="page-title-wrap">
+                <h1 class="h-tit" id="pageTitle"></h1>
+            </div>
+
+            <!-- resize -->
+            <div class="krds-drop-wrap krds-resize" data-adjust="scale">
+                <button type="button" class="krds-btn small text drop-btn">화면크기 <i
+                        class="svg-icon ico-toggle"></i></button>
+                <div class="drop-menu">
+                    <div class="drop-in">
+                        <ul class="drop-list">
+                            <li><button type="button" class="item-link sm" data-adjust-scale="sm">작게</button></li>
+                            <li><button type="button" class="item-link md active" data-adjust-scale="md">보통</button>
+                            </li>
+                            <li><button type="button" class="item-link lg" data-adjust-scale="lg">조금 크게</button></li>
+                            <li><button type="button" class="item-link xlg" data-adjust-scale="xlg">크게</button></li>
+                            <li><button type="button" class="item-link xxlg" data-adjust-scale="xxlg">가장크게</button></li>
+                        </ul>
+                        <div class="drop-bottom">
+                            <button type="button" class="krds-btn medium text" data-adjust-scale="md"><i
+                                    class="svg-icon ico-reset"></i> 초기화</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //resize -->
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="krds-footer"></footer>
+    <!-- //footer -->
+    <script src="/js/layout.js"></script>
+</body>
+
+</html>

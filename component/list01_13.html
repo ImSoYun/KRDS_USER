@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+</head>
+
+<body>
+    <!-- 건너뛰기 링크 -->
+    <div id="krds-skip-link">
+        <a href="#breadcrumb">본문 바로가기</a>
+    </div>
+    <!-- //건너뛰기 링크 -->
+    <!-- masthead -->
+    <div id="krds-masthead">
+        <div class="toggle-wrap">
+            <div class="toggle-head">
+                <div class="inner">
+                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //masthead -->
+
+    <!-- header -->
+    <div id="headerWrap"></div>
+    <!-- //header -->
+
+    <div class="inner sub_content">
+        <!-- side navigation -->
+        <nav class="krds-side-navigation">
+            <h2 class="lnb-tit">컴포넌트</h2>
+            <!-- lnb-list -->
+            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
+            <!-- //lnb-list -->
+        </nav>
+        <!-- //side navigation -->
+
+        <div class="page_wrap">
+            <!-- breadcrumb -->
+            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
+
+            <div class="page-title-wrap">
+                <h1 class="h-tit" id="pageTitle"></h1>
+            </div>
+
+            <div class="input_wrap">
+                <div class="input_inner">
+                    <h4 class="con-tit">툴팁</h4>
+
+                    <!-- tooltip -->
+                    <button type="button" class="krds-btn small text krds-tooltip" data-tooltip="툴팁의 기본 설정입니다">
+                        tooltip-horizontal <i class="svg-icon ico-angle right"></i>
+                    </button>
+
+                    <button type="button" class="krds-btn icon krds-tooltip" data-tooltip="아이콘 버튼에 제공되는 툴팁">
+                        <span class="sr-only">도움말</span>
+                        <i class="svg-icon ico-help"></i>
+                    </button>
+
+                    <button type="button" class="krds-btn krds-tooltip" data-tooltip="버튼에 제공되는 툴팁">도움말</button>
+                    <!-- //tooltip -->
+
+                    <!-- tooltip -->
+                    <button type="button" class="krds-btn small text krds-tooltip tooltip-vertical"
+                        data-tooltip="tooltip-vertical 옵션입니다">
+                        tooltip-vertical <i class="svg-icon ico-angle right"></i>
+                    </button>
+
+                    <button type="button" class="krds-btn icon krds-tooltip tooltip-vertical"
+                        data-tooltip="아이콘 버튼에 제공되는 툴팁">
+                        <span class="sr-only">도움말</span>
+                        <i class="svg-icon ico-help"></i>
+                    </button>
+
+                    <button type="button" class="krds-btn krds-tooltip tooltip-vertical"
+                        data-tooltip="버튼에 제공되는 툴팁">도움말</button>
+                    <!-- //tooltip -->
+
+
+                    <!-- contextual help -->
+                    <!-- tooltip : 위치 - 상단 왼쪽 -->
+                    <div class="krds-contextual-help top left">
+                        <p class="tooltip-txt">예시이미지(상단 왼쪽)</p>
+                        <div class="tooltip-action">
+                            <button type="button" class="krds-btn medium icon tooltip-btn">
+                                <span class="sr-only">도움말</span>
+                                <i class="svg-icon ico-tooltip"></i>
+                            </button>
+                            <div class="tooltip-popover" role="tooltip">
+                                <h4 class="tooltip-title">도움말 제목</h4>
+                                <div class="tooltip-contents">
+                                    <p>컴포넌트 주변에 배치되어 해당 컴포넌트의 상태나 관련된 상세 정보를 제공하는 컴포넌트이다. 맥락적 도움말은 정보 아이콘이나 도움 아이콘 버튼을
+                                        통해 사용자가
+                                        요청하는 경우에만 화면에 표시된다.</p>
+                                    <div class="btn-wrap">
+                                        <a href="#;" class="krds-btn xsmall link basic">바로가기 <i
+                                                class="svg-icon ico-angle right"></i></a>
+                                    </div>
+                                </div>
+                                <button type="button" class="krds-btn xsmall icon tooltip-close">
+                                    <span class="sr-only">닫기</span>
+                                    <i class="svg-icon ico-modal-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //tooltip : 위치 - 상단 왼쪽 -->
+
+                    <!-- tooltip : 위치 - 상단 중앙 -->
+                    <div class="krds-contextual-help top center">
+                        <p class="tooltip-txt">예시이미지(상단 중앙)</p>
+                        <div class="tooltip-action">
+                            <button type="button" class="krds-btn medium icon tooltip-btn" aria-expanded="false">
+                                <span class="sr-only">도움말</span>
+                                <i class="svg-icon ico-tooltip"></i>
+                            </button>
+                            <div class="tooltip-popover" role="tooltip">
+                                <h4 class="tooltip-title">도움말 제목</h4>
+                                <div class="tooltip-contents">
+                                    <p>컴포넌트 주변에 배치되어 해당 컴포넌트의 상태나 관련된 상세 정보를 제공하는 컴포넌트이다. 맥락적 도움말은 정보 아이콘이나 도움 아이콘 버튼을
+                                        통해 사용자가
+                                        요청하는 경우에만 화면에 표시된다.</p>
+                                    <div class="btn-wrap">
+                                        <a href="#;" class="krds-btn xsmall link basic">바로가기 <i
+                                                class="svg-icon ico-angle right"></i></a>
+                                    </div>
+                                </div>
+                                <button type="button" class="krds-btn xsmall icon tooltip-close">
+                                    <span class="sr-only">닫기</span>
+                                    <i class="svg-icon ico-modal-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //tooltip : 위치 - 상단 중앙 -->
+
+                    <!-- tooltip : 위치 - 상단 오른쪽 -->
+                    <div class="krds-contextual-help top right">
+                        <p class="tooltip-txt">예시이미지(상단 오른쪽)</p>
+                        <div class="tooltip-action">
+                            <button type="button" class="krds-btn medium icon tooltip-btn" aria-expanded="false">
+                                <span class="sr-only">도움말</span>
+                                <i class="svg-icon ico-tooltip"></i>
+                            </button>
+                            <div class="tooltip-popover" role="tooltip">
+                                <h4 class="tooltip-title">도움말 제목</h4>
+                                <div class="tooltip-contents">
+                                    <p>컴포넌트 주변에 배치되어 해당 컴포넌트의 상태나 관련된 상세 정보를 제공하는 컴포넌트이다. 맥락적 도움말은 정보 아이콘이나 도움 아이콘 버튼을
+                                        통해 사용자가
+                                        요청하는 경우에만 화면에 표시된다.</p>
+                                    <div class="btn-wrap">
+                                        <a href="#;" class="krds-btn xsmall link basic">바로가기 <i
+                                                class="svg-icon ico-angle right"></i></a>
+                                    </div>
+                                </div>
+                                <button type="button" class="krds-btn xsmall icon tooltip-close">
+                                    <span class="sr-only">닫기</span>
+                                    <i class="svg-icon ico-modal-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //tooltip : 위치 - 상단 오른쪽 -->
+
+                    <br><br>
+
+                    <!-- tooltip : 위치 - 하단 왼쪽 -->
+                    <div class="krds-contextual-help bottom left">
+                        <p class="tooltip-txt">예시이미지(하단 왼쪽)</p>
+                        <div class="tooltip-action">
+                            <button type="button" class="krds-btn medium icon tooltip-btn" aria-expanded="false">
+                                <span class="sr-only">도움말</span>
+                                <i class="svg-icon ico-tooltip"></i>
+                            </button>
+                            <div class="tooltip-popover" role="tooltip">
+                                <h4 class="tooltip-title">도움말 제목</h4>
+                                <div class="tooltip-contents">
+                                    <p>컴포넌트 주변에 배치되어 해당 컴포넌트의 상태나 관련된 상세 정보를 제공하는 컴포넌트이다. 맥락적 도움말은 정보 아이콘이나 도움 아이콘 버튼을
+                                        통해 사용자가
+                                        요청하는 경우에만 화면에 표시된다.</p>
+                                    <div class="btn-wrap">
+                                        <a href="#;" class="krds-btn xsmall link basic">바로가기 <i
+                                                class="svg-icon ico-angle right"></i></a>
+                                    </div>
+                                </div>
+                                <button type="button" class="krds-btn xsmall icon tooltip-close">
+                                    <span class="sr-only">닫기</span>
+                                    <i class="svg-icon ico-modal-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //tooltip : 위치 - 하단 왼쪽 -->
+
+                    <!-- tooltip : 위치 - 하단 중앙 -->
+                    <div class="krds-contextual-help bottom center">
+                        <p class="tooltip-txt">예시이미지(하단 중앙)</p>
+                        <div class="tooltip-action">
+                            <button type="button" class="krds-btn medium icon tooltip-btn" aria-expanded="false">
+                                <span class="sr-only">도움말</span>
+                                <i class="svg-icon ico-tooltip"></i>
+                            </button>
+                            <div class="tooltip-popover" role="tooltip">
+                                <h4 class="tooltip-title">도움말 제목</h4>
+                                <div class="tooltip-contents">
+                                    <p>컴포넌트 주변에 배치되어 해당 컴포넌트의 상태나 관련된 상세 정보를 제공하는 컴포넌트이다. 맥락적 도움말은 정보 아이콘이나 도움 아이콘 버튼을
+                                        통해 사용자가
+                                        요청하는 경우에만 화면에 표시된다.</p>
+                                    <div class="btn-wrap">
+                                        <a href="#;" class="krds-btn xsmall link basic">바로가기 <i
+                                                class="svg-icon ico-angle right"></i></a>
+                                    </div>
+                                </div>
+                                <button type="button" class="krds-btn xsmall icon tooltip-close">
+                                    <span class="sr-only">닫기</span>
+                                    <i class="svg-icon ico-modal-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //tooltip : 위치 - 하단 중앙 -->
+
+                    <!-- tooltip : 위치 - 하단 오른쪽 -->
+                    <div class="krds-contextual-help bottom right">
+                        <p class="tooltip-txt">예시이미지(하단 오른쪽)</p>
+                        <div class="tooltip-action">
+                            <button type="button" class="krds-btn medium icon tooltip-btn" aria-expanded="false">
+                                <span class="sr-only">도움말</span>
+                                <i class="svg-icon ico-tooltip"></i>
+                            </button>
+                            <div class="tooltip-popover" role="tooltip">
+                                <h4 class="tooltip-title">도움말 제목</h4>
+                                <div class="tooltip-contents">
+                                    <p>컴포넌트 주변에 배치되어 해당 컴포넌트의 상태나 관련된 상세 정보를 제공하는 컴포넌트이다. 맥락적 도움말은 정보 아이콘이나 도움 아이콘 버튼을
+                                        통해 사용자가
+                                        요청하는 경우에만 화면에 표시된다.</p>
+                                    <div class="btn-wrap">
+                                        <a href="#;" class="krds-btn xsmall link basic">바로가기 <i
+                                                class="svg-icon ico-angle right"></i></a>
+                                    </div>
+                                </div>
+                                <button type="button" class="krds-btn xsmall icon tooltip-close">
+                                    <span class="sr-only">닫기</span>
+                                    <i class="svg-icon ico-modal-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //tooltip : 위치 - 하단 오른쪽 -->
+                    <!-- //contextual help -->
+                </div>
+
+                <div class="input_inner">
+                    <h4 class="con-tit">코치마크</h4>
+                    <!-- coach mark -->
+                    <div class="txt-box bg-white bg-white krds-coach-mark">
+                        <!-- 따라하기 말풍선 -->
+                        <div class="coach-balloon">
+                            <h5 class="sr-only">따라하기 가이드</h5>
+                            <h6 class="coach-tit">1단계 : 코치 마크</h6>
+                            <p class="desc">1단계 코치 마크 내용입니다.</p>
+                            <div class="coach-controls">
+                                <div class="num">
+                                    <span class="sr-only">현재 단계</span>
+                                    <strong>1</strong>
+                                    <span class="sr-only">총 단계</span>
+                                    <span>4</span>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button type="button" class="krds-btn small text">그만보기</button>
+                                    <button type="button" class="krds-btn small tertiary">다음으로</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 따라하기 말풍선 -->
+
+                        <!-- 코치 마크 내용 -->
+                        <div>
+                            <h3>코치 마크 내용</h3>
+                        </div>
+                        <!-- //코치 마크 내용 -->
+                    </div>
+                    <!-- coach mark -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="krds-footer"></footer>
+    <!-- //footer -->
+    <script src="/js/layout.js"></script>
+</body>
+
+</html>

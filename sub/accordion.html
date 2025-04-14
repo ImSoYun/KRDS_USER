@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="" type="text/css" rel="stylesheet" />
+	<link href="/css/custom.css" type="text/css" rel="stylesheet" />
+
+	<script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+</head>
+
+<body>
+<div class="grid grid-2">
+	<div class="copy_wrap">
+		<button class="btn" data-clipboard-target="#target01">Copy</button>
+		<div class="krds-accordion">
+			<div class="accordion-item">
+				<h5 class="accordion-header"><button type="button" id="accordionHeaderSample01"
+						class="btn-accordion" aria-controls="accordionCollapseSample01">아코디언 타이틀 영역</button></h5>
+				<div id="accordionCollapseSample01" class="accordion-collapse collapse"
+					aria-labelledby="accordionHeaderSample01">
+					<div class="accordion-body">
+						<!-- accordion contents -->
+						아코디언 내용 영역
+						<!-- //accordion contents -->
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h5 class="accordion-header"><button type="button" id="accordionHeaderSample02"
+						class="btn-accordion" aria-controls="accordionCollapseSample02">아코디언 타이틀 영역</button></h5>
+				<div id="accordionCollapseSample02" class="accordion-collapse collapse"
+					aria-labelledby="accordionHeaderSample02">
+					<div class="accordion-body">
+						<!-- accordion contents -->
+						아코디언 내용 영역
+						<!-- //accordion contents -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="copy_wrap">
+		<button class="btn" data-clipboard-target="#target02">Copy</button>
+		<div class="krds-accordion type-line">
+			<div class="accordion-item">
+				<h5 class="accordion-header">
+					<button type="button" id="accordionHeaderSample01" class="btn-accordion"
+						aria-controls="accordionCollapseSample01">아코디언 타이틀 영역</button>
+				</h5>
+				<div id="accordionCollapseSample01" class="accordion-collapse collapse"
+					aria-labelledby="accordionHeaderSample01">
+					<div class="accordion-body">
+						아코디언 내용 영역
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h5 class="accordion-header">
+					<button type="button" id="accordionHeaderSample02" class="btn-accordion"
+						aria-controls="accordionCollapseSample02">아코디언 타이틀 영역</button>
+				</h5>
+				<div id="accordionCollapseSample02" class="accordion-collapse collapse"
+					aria-labelledby="accordionHeaderSample02">
+					<div class="accordion-body">
+						아코디언 내용 영역
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<textarea name="" class="hidden_wrap" id="target01">
+	<div class="krds-accordion">
+		<div class="accordion-item">
+			<h5 class="accordion-header"><button type="button" id="accordionHeaderSample01" class="btn-accordion" aria-controls="accordionCollapseSample01">아코디언 타이틀 영역</button></h5>
+			<div id="accordionCollapseSample01" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample01">
+				<div class="accordion-body">
+					<!-- accordion contents -->
+					아코디언 내용 영역
+					<!-- //accordion contents -->
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h5 class="accordion-header"><button type="button" id="accordionHeaderSample02" class="btn-accordion" aria-controls="accordionCollapseSample02">아코디언 타이틀 영역</button></h5>
+			<div id="accordionCollapseSample02" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample02">
+				<div class="accordion-body">
+					<!-- accordion contents -->
+					아코디언 내용 영역
+					<!-- //accordion contents -->
+				</div>
+			</div>
+		</div>
+	</div>
+</textarea>
+
+
+<textarea name="" class="hidden_wrap" id="target02">
+	<div class="krds-accordion type-line">
+		<div class="accordion-item">
+			<h5 class="accordion-header">
+				<button type="button" id="accordionHeaderSample01" class="btn-accordion"
+					aria-controls="accordionCollapseSample01">아코디언 타이틀 영역</button>
+			</h5>
+			<div id="accordionCollapseSample01" class="accordion-collapse collapse"
+				aria-labelledby="accordionHeaderSample01">
+				<div class="accordion-body">
+					아코디언 내용 영역
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h5 class="accordion-header">
+				<button type="button" id="accordionHeaderSample02" class="btn-accordion"
+					aria-controls="accordionCollapseSample02">아코디언 타이틀 영역</button>
+			</h5>
+			<div id="accordionCollapseSample02" class="accordion-collapse collapse"
+				aria-labelledby="accordionHeaderSample02">
+				<div class="accordion-body">
+					아코디언 내용 영역
+				</div>
+			</div>
+		</div>
+	</div>
+</textarea>
+<script src="/js/script.js"></script>
+
+</body>
+
+
+</html>

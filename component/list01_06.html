@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+</head>
+
+<body>
+    <!-- 건너뛰기 링크 -->
+    <div id="krds-skip-link">
+        <a href="#breadcrumb">본문 바로가기</a>
+    </div>
+    <!-- //건너뛰기 링크 -->
+    <!-- masthead -->
+    <div id="krds-masthead">
+        <div class="toggle-wrap">
+            <div class="toggle-head">
+                <div class="inner">
+                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //masthead -->
+
+    <!-- header -->
+    <div id="headerWrap"></div>
+    <!-- //header -->
+
+    <div class="inner sub_content">
+        <!-- side navigation -->
+        <nav class="krds-side-navigation">
+            <h2 class="lnb-tit">컴포넌트</h2>
+            <!-- lnb-list -->
+            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
+            <!-- //lnb-list -->
+        </nav>
+        <!-- //side navigation -->
+
+        <div class="page_wrap">
+            <!-- breadcrumb -->
+            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
+
+            <div class="page-title-wrap">
+                <h1 class="h-tit" id="pageTitle"></h1>
+            </div>
+
+
+
+            <!-- badge -->
+            <h4 class="con-tit">기본</h4>
+<div class="krds-badge-wrap">
+    <span class="krds-badge outline-primary">Label</span>
+    <span class="krds-badge outline-secondary">Label</span>
+    <span class="krds-badge outline-gray">Label</span>
+    <span class="krds-badge outline-point">Label</span>
+    <span class="krds-badge outline-danger">Label</span>
+    <span class="krds-badge outline-warning">Label</span>
+    <span class="krds-badge outline-success">Label</span>
+    <span class="krds-badge outline-information">Label</span>
+    <span class="krds-badge outline-disabled">Label</span>
+  </div>
+  
+  <div class="krds-badge-wrap">
+    <span class="krds-badge bg-primary">Label</span>
+    <span class="krds-badge bg-secondary">Label</span>
+    <span class="krds-badge bg-gray">Label</span>
+    <span class="krds-badge bg-point">Label</span>
+    <span class="krds-badge bg-danger">Label</span>
+    <span class="krds-badge bg-warning">Label</span>
+    <span class="krds-badge bg-success">Label</span>
+    <span class="krds-badge bg-information">Label</span>
+    <span class="krds-badge bg-disabled">Label</span>
+  </div>
+  
+  <div class="krds-badge-wrap">
+    <span class="krds-badge bg-light-primary">Label</span>
+    <span class="krds-badge bg-light-secondary">Label</span>
+    <span class="krds-badge bg-light-gray">Label</span>
+    <span class="krds-badge bg-light-point">Label</span>
+    <span class="krds-badge bg-light-danger">Label</span>
+    <span class="krds-badge bg-light-warning">Label</span>
+    <span class="krds-badge bg-light-success">Label</span>
+    <span class="krds-badge bg-light-information">Label</span>
+    <span class="krds-badge bg-light-disabled">Label</span>
+  </div>
+  <!-- //badge -->
+
+  <h4 class="con-tit">사이즈</h4>
+<!-- badge -->
+<div class="krds-badge-wrap">
+    <span class="krds-badge large outline-primary">Label</span>
+    <span class="krds-badge large outline-secondary">Label</span>
+    <span class="krds-badge large outline-gray">Label</span>
+    <span class="krds-badge large outline-point">Label</span>
+    <span class="krds-badge large outline-danger">Label</span>
+    <span class="krds-badge large outline-warning">Label</span>
+    <span class="krds-badge large outline-success">Label</span>
+    <span class="krds-badge large outline-information">Label</span>
+    <span class="krds-badge large outline-disabled">Label</span>
+  </div>
+  
+  <div class="krds-badge-wrap">
+    <span class="krds-badge medium bg-primary">Label</span>
+    <span class="krds-badge medium bg-secondary">Label</span>
+    <span class="krds-badge medium bg-gray">Label</span>
+    <span class="krds-badge medium bg-point">Label</span>
+    <span class="krds-badge medium bg-danger">Label</span>
+    <span class="krds-badge medium bg-warning">Label</span>
+    <span class="krds-badge medium bg-success">Label</span>
+    <span class="krds-badge medium bg-information">Label</span>
+    <span class="krds-badge medium bg-disabled">Label</span>
+  </div>
+  
+  <div class="krds-badge-wrap">
+    <span class="krds-badge small bg-light-primary">Label</span>
+    <span class="krds-badge small bg-light-secondary">Label</span>
+    <span class="krds-badge small bg-light-gray">Label</span>
+    <span class="krds-badge small bg-light-point">Label</span>
+    <span class="krds-badge small bg-light-danger">Label</span>
+    <span class="krds-badge small bg-light-warning">Label</span>
+    <span class="krds-badge small bg-light-success">Label</span>
+    <span class="krds-badge small bg-light-information">Label</span>
+    <span class="krds-badge small bg-light-disabled">Label</span>
+  </div>
+  <!-- //badge -->
+
+  <h4 class="con-tit">숫자형</h4>
+<!-- badge -->
+<div class="krds-badge-wrap">
+    <span class="krds-badge bg-primary number">5</span>
+    <span class="krds-badge bg-primary number">999+</span>
+  </div>
+  
+  <div class="krds-badge-wrap">
+    <span class="krds-badge bg-point number">5</span>
+    <span class="krds-badge bg-point number">999+</span>
+  </div>
+  <!-- //badge -->
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="krds-footer"></footer>
+    <!-- //footer -->
+    <script src="/js/layout.js"></script>
+</body>
+
+</html>

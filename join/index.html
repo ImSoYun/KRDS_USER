@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+</head>
+
+<body>
+    <!-- 건너뛰기 링크 -->
+    <div id="krds-skip-link">
+        <a href="#breadcrumb">본문 바로가기</a>
+    </div>
+    <!-- //건너뛰기 링크 -->
+    <!-- masthead -->
+    <div id="krds-masthead">
+        <div class="toggle-wrap">
+            <div class="toggle-head">
+                <div class="inner">
+                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //masthead -->
+
+    <!-- header -->
+    <div id="headerWrap"></div>
+    <!-- //header -->
+
+    <div class="inner join_wrap">
+        <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
+
+        <h1>회원가입</h1>
+
+        <ol class="step-wrap">
+            <li class="col-sm-4 active">
+                <span>
+                    <em class="sr-only">현재단계</em>
+                    <i class="step">1단계</i>
+                    <span class="step-tit">약관동의</span>
+                </span>
+            </li>
+            <li class="col-sm-4">
+                <span>
+                    <i class="step">2단계</i>
+                    <span class="step-tit">본인인증</span>
+                </span>
+            </li>
+            <li class="col-sm-4">
+                <span>
+                    <i class="step">3단계</i>
+                    <span class="step-tit">회원정보입력</span>
+                </span>
+            </li>
+            <li class="">
+                <span>
+                    <i class="step">4단계</i>
+                    <span class="step-tit">가입완료</span>
+                </span>
+            </li>
+        </ol>
+
+        <h3>약관동의</h3>
+        <div class="whitebox">
+            <ul class="lstyle-dot">
+                <li>KRDS의 회원가입 및 모든 정보이용은 무료로 제공되며 맞춤서비스 이용은 회원가입을 원칙으로 하고 있습니다.</li>
+                <li>회원가입시 입력하신 개인정보는 [온통청년 개인정보보호방침]에 따라 안전하게 보호됩니다.</li>
+                <li>KRDS는 새로 개편되어 이전 회원정보를 이관하지 않아 신규 회원가입을 해주셔야 합니다.</li>
+            </ul>
+        </div>
+
+        <div class="agreebox center">
+            <div class="krds-form-check">
+                <input type="checkbox" name="chk_1" id="chk_1">
+                <label for="chk_1">약관 전체동의</label>
+            </div>
+        </div>
+
+        <h3 class="mgt3">[필수] KRDS 이용약관</h3>
+        <div class="krds-disclosure agree_txt_wrap">
+            <button type="button" class="krds-btn  btn-conts-expand secondary">
+                약관읽기
+            </button>
+            <div class="expand-wrap">
+                <div>
+                    제1장 총칙<br /><br />
+                    제1조 (목적)<br />
+                    이용에 관한 조건 및 절차와 기타 필요한 사항을 규정하는 것을 목적으로 합니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="agreebox">
+            <div class="form-conts">
+                <div class="krds-form-check">
+                    <input type="radio" name="rdo_1" id="rdo_1">
+                    <label for="rdo_1">동의함</label>
+                </div>
+                <div class="krds-form-check">
+                    <input type="radio" name="rdo_1" id="rdo_11">
+                    <label for="rdo_11">동의안안함</label>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mgt3">[필수] KRDS 이용약관</h3>
+        <div class="krds-disclosure agree_txt_wrap">
+            <button type="button" class="krds-btn  btn-conts-expand secondary">
+                약관읽기
+            </button>
+            <div class="expand-wrap">
+                <div>
+                    제1장 총칙<br /><br />
+                    제1조 (목적)<br />
+                    이용에 관한 조건 및 절차와 기타 필요한 사항을 규정하는 것을 목적으로 합니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="agreebox">
+            <div class="form-conts">
+                <div class="krds-form-check">
+                    <input type="radio" name="rdo_12" id="rdo_21">
+                    <label for="rdo_21">동의함</label>
+                </div>
+                <div class="krds-form-check">
+                    <input type="radio" name="rdo_12" id="rdo_22">
+                    <label for="rdo_22">동의안안함</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="btm_area">
+            <button type="button" class="krds-btn xsmall tertiary">이전으로</button>
+            <button type="button" class="krds-btn xsmall primary">다음으로</button>
+        </div>
+
+
+    </div>
+
+    <!-- footer -->
+    <footer id="krds-footer"></footer>
+    <!-- //footer -->
+    <script src="/js/layout.js"></script>
+</body>
+
+</html>

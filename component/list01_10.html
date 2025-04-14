@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+</head>
+
+<body>
+    <!-- 건너뛰기 링크 -->
+    <div id="krds-skip-link">
+        <a href="#breadcrumb">본문 바로가기</a>
+    </div>
+    <!-- //건너뛰기 링크 -->
+    <!-- masthead -->
+    <div id="krds-masthead">
+        <div class="toggle-wrap">
+            <div class="toggle-head">
+                <div class="inner">
+                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //masthead -->
+
+    <!-- header -->
+    <div id="headerWrap"></div>
+    <!-- //header -->
+
+    <div class="inner sub_content">
+        <!-- side navigation -->
+        <nav class="krds-side-navigation">
+            <h2 class="lnb-tit">컴포넌트</h2>
+            <!-- lnb-list -->
+            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
+            <!-- //lnb-list -->
+        </nav>
+        <!-- //side navigation -->
+
+        <div class="page_wrap">
+            <!-- breadcrumb -->
+            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
+
+            <div class="page-title-wrap">
+                <h1 class="h-tit" id="pageTitle"></h1>
+            </div>
+
+
+           <!-- table -->
+<div class="krds-table-wrap">
+    <table class="tbl col data">
+      <caption>000에 대한 표로 제목1,제목2에 대한 내용으로 구성되어 있으며 제목1은 제목1-1,제목1-2,제목1-3으로 구성되어있다.</caption>
+      <colgroup>
+        <col style="width: 30%;">
+        <col>
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">제목1</th>
+          <th scope="col">제목2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">제목1-1</th>
+          <td>내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. </td>
+        </tr>
+        <tr>
+          <th scope="row">제목1-2</th>
+          <td>내용이 들어갑니다.</td>
+        </tr>
+        <tr>
+          <th scope="row">제목1-3</th>
+          <td>내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- //table -->
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="krds-footer"></footer>
+    <!-- //footer -->
+    <script src="/js/layout.js"></script>
+</body>
+
+</html>

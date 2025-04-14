@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+</head>
+
+<body>
+    <!-- 건너뛰기 링크 -->
+    <div id="krds-skip-link">
+        <a href="#breadcrumb">본문 바로가기</a>
+    </div>
+    <!-- //건너뛰기 링크 -->
+    <!-- masthead -->
+    <div id="krds-masthead">
+        <div class="toggle-wrap">
+            <div class="toggle-head">
+                <div class="inner">
+                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //masthead -->
+
+    <!-- header -->
+    <div id="headerWrap"></div>
+    <!-- //header -->
+
+    <div class="inner sub_content">
+        <!-- side navigation -->
+        <nav class="krds-side-navigation">
+            <h2 class="lnb-tit">컴포넌트</h2>
+            <!-- lnb-list -->
+            <ul class="lnb-list" role="menubar" id="sideNav">
+                <li class="lnb-item active" role="none">
+                    <button type="button" class="lnb-btn lnb-toggle active" >레이아웃 및 표현</button>
+                    <!-- lnb-submenu -->
+                    <div class="lnb-submenu">
+                        <ul>
+                            <li class="lnb-subitem" role="none">
+                                <button type="button" class="lnb-btn lnb-toggle-popup" >3Depth
+                                    예시</button>
+                                <!-- lnb-submenu-lv2 -->
+                                <div class="lnb-submenu-lv2">
+                                    <button type="button" class="lnb-btn-tit">3Depth-title</button>
+                                    <ul>
+                                        <li role="none"><a href="#" class="lnb-btn" role="menuitem">4Depth</a></li>
+                                        <li role="none"><a href="#" class="lnb-btn" role="menuitem">4Depth</a></li>
+                                        <li role="none"><a href="#" class="lnb-btn" role="menuitem">4Depth</a></li>
+                                    </ul>
+                                </div>
+                                <!-- //lnb-submenu-lv2 -->
+                            </li>
+
+
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list01.html active" class="lnb-btn lnb-link sub_title_txt selected" role="menuitem">구조화 목록</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list02.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">긴급 공지</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list03.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">달력</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list04.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">디스클로저</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list05.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">모달</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list06.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">배지</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list07.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">아코디언</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list08.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">캐러셀</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list09.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">탭</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list10.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">표</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list11.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">텍스트 목록</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //lnb-submenu -->
+                </li>
+
+                <li class="lnb-item" role="none">
+                    <button type="button" class="lnb-btn lnb-toggle active" >액션</button>
+                    <!-- lnb-submenu -->
+                    <div class="lnb-submenu">
+                        <ul>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list12.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">링크 및 버튼</a>
+                            </li>
+                            <li class="lnb-subitem" role="none">
+                                <a href="/list13.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">Input</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //lnb-submenu -->
+                </li>
+            </ul>
+            <!-- //lnb-list -->
+        </nav>
+        <!-- //side navigation -->
+
+        <div class="page_wrap">
+            <!-- breadcrumb -->
+            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
+
+            <div class="page-title-wrap">
+                <h1 class="h-tit" id="pageTitle"></h1>
+            </div>
+
+
+            <!-- breadcrumb -->
+            <!-- 구조화 목록 -->
+            <ul class="krds-structured-list type-full">
+                <li class="structured-item">
+                    <div class="in">
+                        <div class="card-top">
+                            <span class="krds-badge bg-light-primary">뱃지</span>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="c-text">
+                                <p class="c-tit"><span class="span">타이틀 영역</span></p>
+                                <p class="c-txt">
+                                    간단한 설명이 들어가는 영역입니다. 최대 3줄까지 작성합니다. 간단한 설명이 들어가는 영역입니다. 간단한 설명이 들어가는 영역입니다.
+                                </p>
+                                <p class="c-date">
+                                    <strong class="key">신청 기간</strong>
+                                    <span class="value">2023.00.00-2024.00.00</span>
+                                </p>
+                            </a>
+                            <div class="c-btn">
+                                <a href="#" class="krds-btn secondary" title="타이틀 영역">신청하기</a>
+                            </div>
+                        </div>
+                        <div class="card-btm">
+                            <span class="tag">태그</span>
+                            <span class="tag">태그</span>
+                        </div>
+                        <div class="card-btn">
+                            <button type="button" class="krds-btn medium text" title="타이틀 영역"><i
+                                    class="svg-icon ico-share"></i> 공유하기</button>
+                            <button type="button" class="krds-btn medium text" title="타이틀 영역"><i
+                                    class="svg-icon ico-like"></i> 찜하기</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="structured-item">
+                    <div class="in">
+                        <div class="card-top">
+                            <span class="krds-badge bg-light-success">뱃지</span>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="c-text">
+                                <p class="c-tit"><span class="span">타이틀 영역</span></p>
+                                <p class="c-txt">
+                                    간단한 설명이 들어가는 영역입니다. 최대 3줄까지 작성합니다. 간단한 설명이 들어가는 영역입니다. 간단한 설명이 들어가는 영역입니다.
+                                </p>
+                                <p class="c-date">
+                                    <strong class="key">신청 기간</strong>
+                                    <span class="value">2023.00.00-2024.00.00</span>
+                                </p>
+                            </a>
+                            <div class="c-btn">
+                                <a href="#" class="krds-btn secondary" title="타이틀 영역">신청하기</a>
+                            </div>
+                        </div>
+                        <div class="card-btm">
+                            <span class="tag">태그</span>
+                            <span class="tag">태그</span>
+                        </div>
+                        <div class="card-btn">
+                            <button type="button" class="krds-btn medium text" title="타이틀 영역"><i
+                                    class="svg-icon ico-share"></i> 공유하기</button>
+                            <button type="button" class="krds-btn medium text" title="타이틀 영역"><i
+                                    class="svg-icon ico-like"></i> 찜하기</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="structured-item">
+                    <div class="in">
+                        <div class="card-top">
+                            <span class="krds-badge bg-secondary">뱃지</span>
+                        </div>
+                        <div class="card-body">
+                            <a href="#" class="c-text">
+                                <p class="c-tit"><span class="span">타이틀 영역</span></p>
+                                <p class="c-txt">
+                                    간단한 설명이 들어가는 영역입니다. 최대 3줄까지 작성합니다. 간단한 설명이 들어가는 영역입니다. 간단한 설명이 들어가는 영역입니다.
+                                </p>
+                                <p class="c-date">
+                                    <strong class="key">신청 기간</strong>
+                                    <span class="value">2023.00.00-2024.00.00</span>
+                                </p>
+                            </a>
+                            <div class="c-btn">
+                                <a href="#" class="krds-btn secondary" title="타이틀 영역">신청하기</a>
+                            </div>
+                        </div>
+                        <div class="card-btm">
+                            <span class="tag">태그</span>
+                            <span class="tag">태그</span>
+                        </div>
+                        <div class="card-btn">
+                            <button type="button" class="krds-btn medium text" title="타이틀 영역"><i
+                                    class="svg-icon ico-share"></i> 공유하기</button>
+                            <button type="button" class="krds-btn medium text" title="타이틀 영역"><i
+                                    class="svg-icon ico-like"></i> 찜하기</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 구조화 목록 -->
+
+            <!-- pagination -->
+            <div class="krds-pagination" id="paging"></div>
+            <!-- //pagination -->
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="krds-footer"></footer>
+    <!-- //footer -->
+    <script src="/js/layout.js"></script>
+</body>
+
+</html>
