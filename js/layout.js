@@ -78,7 +78,21 @@ const krdsHeader = `
                             </a>
                         </h2>
                         <div class="header-actions">
-                            <button type="button" class="btn-navi sch" title="통합검색 레이어">통합검색</button>
+                            <button type="button" class="btn-navi sch" title="통합검색 레이어" onclick="searchCtrl.open()">통합검색</button>
+
+                            <div id="totalSearch">
+                                <button class="modal-close" onclick="searchCtrl.close()"><img src="/img/icon/ico_close_48.svg" /></button>
+                                <div class="search_inner">
+                                    <label for="consult_name22">검색어를 입력해주세요.</label>
+                                    <div class="search_input">
+                                        <input type="text" id="consult_name22" class="krds-input" placeholder="검색어 입력" value="">
+                                        <button><img src="/img/icon/ico_sch_40.svg" /></button>
+                                    </div>
+
+                                    <h3>인기검색어</h3>
+                                    <ol class="search-list _keywordList"><li><a href="javascript:;">	<span class="txt">test1</span>	<span class="ranking-state up">		<em class="sr-only">상승</em>	</span></a></li><li><a href="javascript:;">	<span class="txt">test1</span>	<span class="ranking-state down">		<em class="sr-only">하락</em>	</span></a></li><li><a href="javascript:;">	<span class="txt">test1</span>	</a></li><li><a href="javascript:;">	<span class="txt">test1</span>	<span class="ranking-state up">		<em class="sr-only">상승</em>	</span></a></li><li><a href="javascript:;">	<span class="txt">test1</span>	<span class="ranking-state up">		<em class="sr-only">상승</em>	</span></a></li><li><a href="javascript:;">	<span class="txt">test1</span>	<span class="ranking-state up">		<em class="sr-only">상승</em>	</span></a></li><li><a href="javascript:;">	<span class="txt">test1</span>	<span class="ranking-state down">		<em class="sr-only">하락</em>	</span></a></li><li><a href="javascript:;">	<span class="txt">test1</span>	<span class="ranking-state same">		<em class="sr-only">동일</em>	</span></a></li><li><a href="javascript:;">	<span class="txt">test1</span>	<span class="ranking-state same">		<em class="sr-only">동일</em>	</span></a></li><li><a href="javascript:;">	<span class="txt">test1</span>	<span class="ranking-state same">		<em class="sr-only">동일</em>	</span></a></li></ol>
+                                </div>
+                            </div>
                             <a href="/sub/login.html" class="btn-navi login">로그인</a>
                             <a href="/join/index.html" class="btn-navi join">회원가입</a>
                             <div class="krds-drop-wrap my-drop">
@@ -114,6 +128,8 @@ const krdsHeader = `
                     </div>
                 </div>
             </div>
+
+            
             <!-- //헤더 상단 기타메뉴 -->
 
             <!-- 메인메뉴 : 데스크탑 -->
@@ -722,6 +738,18 @@ subTitleTxt.forEach( (sub, idx) => {
         });
     }
 });
+
+
+const searchCtrl = {
+    open : () => {
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+        document.getElementById('totalSearch').classList.add('active');
+    },
+    close : () => {
+        document.getElementsByTagName('body')[0].style.overflow = 'auto';
+        document.getElementById('totalSearch').classList.remove('active');
+    }
+}
 
 // document.getElementById('pageTitle').innerHTML = localStorage.getItem('title');
 // document.getElementById('breadTitle').innerHTML = localStorage.getItem('title');
