@@ -488,6 +488,22 @@ span.lstyle-dot::before { width: .3rem; height: .3rem; background-color: #1D1D1D
 
 
 
+.bbs_thumb_type03 { margin : 0 -1rem; overflow : hidden } 
+.bbs_thumb_type03 .wrap { float : left; width : 33.33%; padding : 1rem } 
+.bbs_thumb_type03 a { display : block; border : 1px solid #ccc; border-radius : 1.5rem; overflow: hidden;} 
+.bbs_thumb_type03 a > p { position : relative; height : 350px; overflow : hidden } 
+.bbs_thumb_type03 a > p img { position : absolute; top : 50%; left : 50%; transform: translate(-50%, -50%); max-width : 100%; height : auto; min-height : 100%; width : auto; object-fit: cover } 
+.bbs_thumb_type03 a div { position : relative; padding : 2rem 3rem } 
+.bbs_thumb_type03 a div sub { display : inline-block; padding : 0.5rem 1rem; border : 1px solid var(--primary60); color : var(--secondary80); font-size : 1.4rem; border-radius : .8rem } 
+.bbs_thumb_type03 a h2 { font-size : 2rem; margin : 1.5rem 0; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; } 
+.bbs_thumb_type03 ul li { font-size : 1.4rem; margin : 1rem 0 }
+.bbs_thumb_type03 ul li span { position : relative; display : inline-block; width : 70px; } 
+.bbs_thumb_type03 ul li span:after { content : ''; width : 2px; height : 10px; background : var(--secondary80); display : inline-block; position : absolute; top : 6px; right : 15px }
+.bbs_thumb_type03 a:hover { text-decoration: underline;}
+
+
+
+
 
 
 

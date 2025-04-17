@@ -162,6 +162,26 @@ let bbsArr = [
                 href: '/bbs/list02_02.html',
                 sub: null
             },
+            {
+                title: 'thumb03',
+                href: '/bbs/list02_03.html',
+                sub: null
+            },
+        ]
+    },
+    {
+        title: 'QNA',
+        sub: [
+            {
+                title: 'qna01',
+                href: '/bbs/list03_01.html',
+                sub: null
+            },
+            {
+                title: 'thumb02',
+                href: '/bbs/list02_02.html',
+                sub: null
+            },
         ]
     },
 ];
