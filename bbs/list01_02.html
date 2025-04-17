@@ -36,12 +36,13 @@
     <div class="inner sub_content">
         <!-- side navigation -->
         <nav class="krds-side-navigation">
-            <h2 class="lnb-tit">컴포넌트</h2>
+            <h2 class="lnb-tit"></h2>
             <!-- lnb-list -->
             <ul class="lnb-list" role="menubar" id="sideNav"></ul>
             <!-- //lnb-list -->
         </nav>
         <!-- //side navigation -->
+
 
         <div class="page_wrap">
             <!-- breadcrumb -->
@@ -51,40 +52,82 @@
                 <h1 class="h-tit" id="pageTitle"></h1>
             </div>
 
-            <!-- critical alerts -->
-            <ul class="krds-critical-alerts">
-                <li>
-                    <div class="critical-ban">
-                        <span class="critical-badge danger">긴급</span>
-                        <p class="critical-txt">긴급 공지 내용 표시</p>
-                        <a href="#" class="krds-btn medium link basic">
-                            <span class="m-hide">자세히 보기</span>
-                            <i class="svg-icon ico-angle right"></i>
-                        </a>
+            <div class="search-top-box">
+                <div class="search-inner">
+                    <label for="ntt-type">카테고리</label>
+                    <select name="" id="">
+                        <option value="">전체</option>
+                        <option value="E">행사</option>
+                        <option value="N">공지</option>
+                        <option value="U">업데이트</option>
+                    </select>
+                </div>
+                <div class="search-inner">
+                    <label for="">검색어</label>
+                    <div class="relative">
+                        <input type="text" id="search-wrd" class="krds-input" placeholder="키워드를 입력해주세요." title="키워드 입력">
+                        <button type="button" class="icon ico-search btn-exec" id="btn-search">
+                            <span class="sr-only">검색</span>
+                            <i class="svg-icon ico-sch"></i>
+                        </button>
                     </div>
-                </li>
-                <li>
-                    <div class="critical-ban">
-                        <span class="critical-badge ok">안전</span>
-                        <p class="critical-txt">긴급 공지 내용 표시</p>
-                        <a href="#" class="krds-btn medium link basic">
-                            <span class="m-hide">자세히 보기</span>
-                            <i class="svg-icon ico-angle right"></i>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="critical-ban">
-                        <span class="critical-badge info">안내</span>
-                        <p class="critical-txt">긴급 공지 내용 표시</p>
-                        <a href="#" class="krds-btn medium link basic">
-                            <span class="m-hide">자세히 보기</span>
-                            <i class="svg-icon ico-angle right"></i>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-            <!-- //critical alerts -->
+                </div>
+            </div>
+
+            <p class="total-count">총 <b>5</b> 건</p>
+
+            <div class="bbs_list_type02">
+                <dl class="head">
+                    <dt>번호</dt>
+                    <dd>제목</dd>
+                    <dd class="bbs_writer">글쓴이</dd>
+                    <dd class="bbs_date">날짜</dd>
+                    <dd class="bbs_count">조회수</dd>
+                </dl>
+                <dl class="body">
+                    <dt>10</dt>
+                    <dd><a href="#;">title title title title title title title title title title title title title title title title title title title title title title title title title </a></dd>
+                    <dd class="bbs_writer">홍길동</dd>
+                    <dd class="bbs_date">2025-01-01</dd>
+                    <dd class="bbs_count">10</dd>
+                </dl>
+                <dl class="body">
+                    <dt>10</dt>
+                    <dd><a href="#;">title title title title title title title title title title title title title title title title title title title title title title title title title </a></dd>
+                    <dd class="bbs_writer">홍길동</dd>
+                    <dd class="bbs_date">2025-01-01</dd>
+                    <dd class="bbs_count">10</dd>
+                </dl>
+                <dl class="body">
+                    <dt>10</dt>
+                    <dd><a href="#;">title title title title title title title title title title title title title title title title title title title title title title title title title </a></dd>
+                    <dd class="bbs_writer">홍길동</dd>
+                    <dd class="bbs_date">2025-01-01</dd>
+                    <dd class="bbs_count">10</dd>
+                </dl>
+                <dl class="body">
+                    <dt>10</dt>
+                    <dd><a href="#;">title title title title title title title title title title title title title title title title title title title title title title title title title </a></dd>
+                    <dd class="bbs_writer">홍길동</dd>
+                    <dd class="bbs_date">2025-01-01</dd>
+                    <dd class="bbs_count">10</dd>
+                </dl>
+                <dl class="body">
+                    <dt>10</dt>
+                    <dd><a href="#;">title title title title title title title title title title title title title title title title title title title title title title title title title </a></dd>
+                    <dd class="bbs_writer">홍길동</dd>
+                    <dd class="bbs_date">2025-01-01</dd>
+                    <dd class="bbs_count">10</dd>
+                </dl>
+                <dl class="body">
+                    <dt>10</dt>
+                    <dd><a href="#;">title title title title title title title title title title title title title title title title title title title title title title title title title </a></dd>
+                    <dd class="bbs_writer">홍길동</dd>
+                    <dd class="bbs_date">2025-01-01</dd>
+                    <dd class="bbs_count">10</dd>
+                </dl>
+            </div>
+
 
             <!-- pagination -->
             <div class="krds-pagination" id="paging"></div>
@@ -97,6 +140,7 @@
     <footer id="krds-footer"></footer>
     <!-- //footer -->
     <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

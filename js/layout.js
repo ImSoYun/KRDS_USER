@@ -133,13 +133,18 @@ let bbsArr = [
         title: '리스트형',
         sub: [
             {
-                title: 'Type01',
+                title: 'list01',
                 href: '/bbs/list01_01.html',
                 sub: null
             },
             {
-                title: 'Type02',
+                title: 'list02',
                 href: '/bbs/list01_02.html',
+                sub: null
+            },
+            {
+                title: 'list03',
+                href: '/bbs/list01_03.html',
                 sub: null
             },
         ]
@@ -148,13 +153,13 @@ let bbsArr = [
         title: '썸네일형',
         sub: [
             {
-                title: '링크 및 버튼',
-                href: '/component/list02_01.html',
+                title: 'thumb01',
+                href: '/bbs/list02_01.html',
                 sub: null
             },
             {
-                title: 'Input',
-                href: '/component/list02_02.html',
+                title: 'thumb02',
+                href: '/bbs/list02_02.html',
                 sub: null
             },
         ]
