@@ -1,3 +1,166 @@
+
+
+let componentArr = [
+    {
+        title: '레이아웃 및 표현',
+        sub: [
+            {
+                title: '3Depth 예시',
+                link: '#;',
+                sub: [
+                    {
+                        title: '3depth',
+                        sub: [
+                            {
+                                title: 'title',
+                                link: '#;',
+                            }
+                        ]
+                    },
+                    {
+                        title: '3depth11',
+                        sub: [
+                            {
+                                title: 'title',
+                                link: '#;',
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                title: '구조화 목록',
+                href: '/component/list01_01.html',
+                sub: null
+            },
+            {
+                title: '긴급 공지',
+                href: '/component/list01_02.html',
+                sub: null
+            },
+            {
+                title: '달력',
+                href: '/component/list01_03.html',
+                sub: null
+            },
+            {
+                title: '디스클로저',
+                href: '/component/list01_04.html',
+                sub: null
+            },
+            {
+                title: '모달',
+                href: '/component/list01_05.html',
+                sub: null
+            },
+            {
+                title: '배지',
+                href: '/component/list01_06.html',
+                sub: null
+            },
+            {
+                title: '아코디언',
+                href: '/component/list01_07.html',
+                sub: null
+            },
+            {
+                title: '캐러셀',
+                href: '/component/list01_08.html',
+                sub: null
+            },
+            {
+                title: '탭',
+                href: '/component/list01_09.html',
+                sub: null
+            },
+            {
+                title: '표',
+                href: '/component/list01_10.html',
+                sub: null
+            },
+            {
+                title: '텍스트 목록',
+                href: '/component/list01_11.html',
+                sub: null
+            },
+            {
+                title: '단계 표시기',
+                href: '/component/list01_12.html',
+                sub: null
+            },
+            {
+                title: '툴팁 및 코치마크',
+                href: '/component/list01_13.html',
+                sub: null
+            },
+        ]
+    },
+    {
+        title: '액션',
+        sub: [
+            {
+                title: '링크 및 버튼',
+                href: '/component/list02_01.html',
+                sub: null
+            },
+            {
+                title: 'Input',
+                href: '/component/list02_02.html',
+                sub: null
+            },
+        ]
+    },
+    {
+        title: '설정',
+        sub: [
+            {
+                title: '언어 변경',
+                href: '/component/list03_01.html',
+                sub: null
+            },
+            {
+                title: '화면 크기 조정',
+                href: '/component/list03_02.html',
+                sub: null
+            },
+        ]
+    }
+];
+
+
+let bbsArr = [
+    {
+        title: '리스트형',
+        sub: [
+            {
+                title: 'Type01',
+                href: '/bbs/list01_01.html',
+                sub: null
+            },
+            {
+                title: 'Type02',
+                href: '/bbs/list01_02.html',
+                sub: null
+            },
+        ]
+    },
+    {
+        title: '썸네일형',
+        sub: [
+            {
+                title: '링크 및 버튼',
+                href: '/component/list02_01.html',
+                sub: null
+            },
+            {
+                title: 'Input',
+                href: '/component/list02_02.html',
+                sub: null
+            },
+        ]
+    },
+];
+
 const krdsHeader = `
     <header id="krds-header">
         <!-- 헤더 컨텐츠 영역  -->
@@ -137,7 +300,7 @@ const krdsHeader = `
                 <div class="inner">
                     <ul class="gnb-menu">
                         <li>
-                            <button type="button" class="gnb-main-trigger" data-trigger="gnb">1Depth</button>
+                            <button type="button" class="gnb-main-trigger" data-trigger="gnb">컴포넌트</button>
                             <!-- gnb-toggle-wrap -->
                             <div class="gnb-toggle-wrap">
                                 <!-- gnb-main-list -->
@@ -145,20 +308,50 @@ const krdsHeader = `
                                     <ul>
                                         <li>
                                             <button type="button" class="gnb-sub-trigger"
-                                                data-trigger="gnb">2Depth</button>
+                                                data-trigger="gnb">레이아웃 및 표현</button>
                                             <!-- gnb-sub-list -->
                                             <div class="gnb-sub-list">
                                                 <div class="gnb-sub-content">
                                                     <h2 class="sub-title">
-                                                        2Depth title
-                                                        <a href="#" class="krds-btn link basic small">
-                                                            <span class="underline">바로가기</span>
-                                                            <i class="svg-icon ico-angle right"></i>
-                                                        </a>
+                                                        레이아웃 및 표현
                                                     </h2>
                                                     <ul>
-                                                        <li><a href="#">Last depth</a></li>
-                                                        <li><button type="button">Last depth</button></li>
+                                                        <li>
+                                                            <a href="/component/list01_02.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">긴급 공지</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_03.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">달력</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_04.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">디스클로저</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_05.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">모달</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_06.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">배지</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_07.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">아코디언</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_08.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">캐러셀</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_09.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">탭</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_10.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">표</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_11.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">텍스트 목록</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_12.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">단계 표시기</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list01_13.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">툴팁 및 코치마크</a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <div class="gnb-sub-banner">
@@ -171,21 +364,48 @@ const krdsHeader = `
                                         </li>
                                         <li>
                                             <button type="button" class="gnb-sub-trigger"
-                                                data-trigger="gnb">2Depth</button>
+                                                data-trigger="gnb">액션</button>
                                             <!-- gnb-sub-list -->
                                             <div class="gnb-sub-list between">
                                                 <div class="gnb-sub-content">
                                                     <h2 class="sub-title">
-                                                        2Depth title
-                                                        <a href="#" class="krds-btn link basic small">
-                                                            <span class="underline">바로가기</span>
-                                                            <i class="svg-icon ico-angle right"></i>
-                                                        </a>
+                                                        액션
                                                     </h2>
                                                     <ul>
-                                                        <li><a href="#">Last depth</a></li>
-                                                        <li><button type="button">Last depth</button></li>
-                                                        <li><button type="button">Last depth</button></li>
+                                                        <li>
+                                                            <a href="/component/list02_01.html" class="lnb-btn lnb-link sub_title_txt"
+                                                                role="menuitem">링크 및 버튼</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list02_02.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">Input</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="gnb-sub-banner">
+                                                    <span class="krds-badge bg-primary">신규 서비스</span>
+                                                    <button type="button" class="krds-btn medium text">메뉴명 <i
+                                                            class="svg-icon ico-angle right"></i></button>
+                                                </div>
+                                            </div>
+                                            <!-- //gnb-sub-list -->
+                                        </li>
+                                        <li>
+                                            <button type="button" class="gnb-sub-trigger"
+                                                data-trigger="gnb">설정</button>
+                                            <!-- gnb-sub-list -->
+                                            <div class="gnb-sub-list between">
+                                                <div class="gnb-sub-content">
+                                                    <h2 class="sub-title">
+                                                        설정
+                                                    </h2>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="/component/list03_01.html" class="lnb-btn lnb-link sub_title_txt"
+                                                                role="menuitem">언어 변경</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/component/list03_02.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">화면 크기 조정</a>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <div class="gnb-sub-banner">
@@ -211,7 +431,7 @@ const krdsHeader = `
                         </li>
 
                         <li>
-                            <button type="button" class="gnb-main-trigger" data-trigger="gnb">1Depth</button>
+                            <button type="button" class="gnb-main-trigger" data-trigger="gnb">게시판</button>
                             <!-- gnb-toggle-wrap -->
                             <div class="gnb-toggle-wrap">
                                 <!-- gnb-main-list -->
@@ -219,18 +439,17 @@ const krdsHeader = `
                                     <ul>
                                         <li>
                                             <button type="button" class="gnb-sub-trigger"
-                                                data-trigger="gnb">2Depth</button>
+                                                data-trigger="gnb">게시판</button>
                                             <!-- gnb-sub-list -->
-                                            <div class="gnb-sub-list">
+                                           <div class="gnb-sub-list between">
                                                 <div class="gnb-sub-content">
-                                                    <h2 class="sub-title"><span>2Depth title</span></h2>
-                                                    <ul class="type-description">
+                                                    <ul>
                                                         <li>
-                                                            <h3 class="tit">
-                                                                <a href="#" target="_blank" title="새 창 열림">3Depth title
-                                                                    <i class="svg-icon ico-go"></i></a>
-                                                            </h3>
-                                                            <p class="txt">메뉴명과 메뉴에 관한 간략한 설명이 표시되는 스타일입니다.</p>
+                                                            <a href="/bbs/list01_01.html" class="lnb-btn lnb-link sub_title_txt"
+                                                                role="menuitem">Type01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/bbs/list01_02.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">Type02</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -501,9 +720,9 @@ const breadcrumb = `
         <li><a href="#" class="txt" id="breadTitle">서비스 신청2</a></li>
     </ol>`
     ;
-    if ( document.getElementById('breadcrumb') != undefined ) {
-        document.getElementById('breadcrumb').innerHTML = breadcrumb;
-    }
+if (document.getElementById('breadcrumb') != undefined) {
+    document.getElementById('breadcrumb').innerHTML = breadcrumb;
+}
 
 const paging = `
             <div class="krds-pagination">
@@ -523,7 +742,7 @@ const paging = `
                 <a class="page-navi next" href="#">다음</a>
             </div>
 `;
-if ( document.getElementById('paging') != undefined ){
+if (document.getElementById('paging') != undefined) {
     document.getElementById('paging').innerHTML = paging;
 }
 
@@ -602,118 +821,73 @@ const footer = `
 `;
 document.getElementById('krds-footer').innerHTML = footer;
 
-let sideMenuTxt = `
-<li class="lnb-item active" role="none">
-                    <button type="button" class="lnb-btn lnb-toggle active">레이아웃 및 표현</button>
-                    <!-- lnb-submenu -->
-                    <div class="lnb-submenu">
-                        <ul>
-                            <li class="lnb-subitem" role="none">
-                                <button type="button" class="lnb-btn lnb-toggle-popup">3Depth
-                                    예시</button>
-                                <!-- lnb-submenu-lv2 -->
-                                <div class="lnb-submenu-lv2">
-                                    <button type="button" class="lnb-btn-tit">3Depth-title</button>
-                                    <ul>
-                                        <li role="none"><a href="#" class="lnb-btn" role="menuitem">4Depth</a></li>
-                                        <li role="none"><a href="#" class="lnb-btn" role="menuitem">4Depth</a></li>
-                                        <li role="none"><a href="#" class="lnb-btn" role="menuitem">4Depth</a></li>
-                                    </ul>
-                                </div>
-                                <!-- //lnb-submenu-lv2 -->
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_01.html" class="lnb-btn lnb-link sub_title_txt selected"
-                                    role="menuitem">구조화 목록</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_02.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">긴급 공지</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_03.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">달력</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_04.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">디스클로저</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_05.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">모달</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_06.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">배지</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_07.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">아코디언</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_08.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">캐러셀</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_09.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">탭</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_10.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">표</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_11.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">텍스트 목록</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_12.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">단계 표시기</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list01_13.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">툴팁 및 코치마크</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //lnb-submenu -->
-                </li>
 
-                <li class="lnb-item" role="none">
-                    <button type="button" class="lnb-btn lnb-toggle">액션</button>
-                    <!-- lnb-submenu -->
-                    <div class="lnb-submenu">
-                        <ul>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list02_01.html" class="lnb-btn lnb-link sub_title_txt"
-                                    role="menuitem">링크 및 버튼</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list02_02.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">Input</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //lnb-submenu -->
-                </li>
-                <li class="lnb-item" role="none">
-                    <button type="button" class="lnb-btn lnb-toggle">설정정</button>
-                    <!-- lnb-submenu -->
-                    <div class="lnb-submenu">
-                        <ul>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list03_01.html" class="lnb-btn lnb-link sub_title_txt"
-                                    role="menuitem">언어 변경</a>
-                            </li>
-                            <li class="lnb-subitem" role="none">
-                                <a href="/component/list03_02.html" class="lnb-btn lnb-link sub_title_txt" role="menuitem">화면 크기 조정</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- //lnb-submenu -->
-                </li>
-                `;
-if (document.getElementById('sideNav') != undefined) {
-    document.getElementById('sideNav').innerHTML = sideMenuTxt;
+let compoNavTxt = ``;
+const setNavArr = (arr) => {
+    compoNavTxt = ``;
+    arr.forEach((e, i) => {
+        compoNavTxt += `
+            <li class="lnb-item active" role="none">
+                <button type="button" class="lnb-btn lnb-toggle ${i == 0 ? 'active' : ''}">${e.title}</button>
+                <div class="lnb-submenu">
+                    <ul>
+                        `
+        for (const j of e.sub) {
+            if (j.sub != null) {
+                compoNavTxt += `<li class="lnb-subitem" role="none">`
+                compoNavTxt += `<button type="button" class="lnb-btn lnb-toggle-popup">${j.title}</button>
+                                    <div class="lnb-submenu-lv2">
+                                            <button type="button" class="lnb-btn-tit">${j.title}</button>
+                                            <ul>
+                                                `
+                for (const k of j.sub)  compoNavTxt += `<li><a class="lnb-btn"  href="${k.href}">${k.title}</a></li>`
+                compoNavTxt += `</ul>
+                                        </div>
+                                    <ul>`
+                compoNavTxt += `</li>`
+            } else {
+                compoNavTxt += `<li class="lnb-subitem" role="none">`
+                compoNavTxt += `<a href="${j.href}" class="lnb-btn lnb-link sub_title_txt" role="menuitem">${j.title}</a>`;
+                compoNavTxt += `</li>`
+            }
+        }
+        compoNavTxt += `
+                    </ul>
+                </div>
+            </li>
+        `;
+    });
+    document.getElementById('sideNav').innerHTML = compoNavTxt;
 }
+
+
+if (document.getElementById('sideNav') != undefined) {
+    let pathname = window.location.pathname.split('/')[1];
+    switch (pathname) {
+        case "component":
+            setNavArr(componentArr);
+            document.getElementsByClassName('lnb-tit')[0].innerHTML = '컴포넌트'
+            break;
+        case "bbs":
+            setNavArr(bbsArr);
+            console.log(bbsArr);
+            document.getElementsByClassName('lnb-tit')[0].innerHTML = '게시판'
+            // document.getElementById('sideNav').innerHTML = bbsNavTxt;
+        default:
+    }
+}
+
 
 const subTitleTxt = document.querySelectorAll('.sub_title_txt');
 const lnbItem = document.querySelectorAll('.lnb-item');
 const lnbToggle = document.querySelectorAll('.lnb-toggle');
 
-subTitleTxt.forEach( (sub, idx) => {
-    for ( const i of lnbItem ) {
+subTitleTxt.forEach((sub, idx) => {
+    for (const i of lnbItem) {
         i.classList.remove('active');
     }
 
-    for ( const i of lnbToggle ) {
+    for (const i of lnbToggle) {
         i.classList.remove('active');
     }
     // sub.setAttribute('href', '#;');
@@ -731,25 +905,28 @@ subTitleTxt.forEach( (sub, idx) => {
     });
     if (sub.innerHTML == localStorage.getItem('title')) {
         sub.classList.add('selected');
-        setTimeout( () => {
-            sub.parentElement.classList.add('active');
-            sub.closest('.lnb-submenu').parentElement.classList.add('active');
-            sub.closest('.lnb-submenu').previousElementSibling.classList.add('active');
-        });
+        setTimeout(() => {
+            if (sub.closest('.lnb-submenu') != null) {
+                sub.parentElement.classList.add('active');
+                sub.closest('.lnb-submenu').parentElement.classList.add('active');
+                sub.closest('.lnb-submenu').previousElementSibling.classList.add('active');
+            }
+
+        }, 500);
     }
 });
 
 
 const searchCtrl = {
-    open : () => {
+    open: () => {
         document.getElementsByTagName('body')[0].style.overflow = 'hidden';
         document.getElementById('totalSearch').classList.add('active');
     },
-    close : () => {
+    close: () => {
         document.getElementsByTagName('body')[0].style.overflow = 'auto';
         document.getElementById('totalSearch').classList.remove('active');
     }
 }
 
-// document.getElementById('pageTitle').innerHTML = localStorage.getItem('title');
-// document.getElementById('breadTitle').innerHTML = localStorage.getItem('title');
+document.getElementById('pageTitle').innerHTML = localStorage.getItem('title');
+document.getElementById('breadTitle').innerHTML = localStorage.getItem('title');

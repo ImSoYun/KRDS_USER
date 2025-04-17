@@ -1,6 +1,15 @@
 @import url(https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.css);
 @import url(common.css);
 
+.krds-form-select,
+.krds-input {
+    font-size: var(--krds-form-select--pc-font-size-small) !important
+}
+
+.krds-btn.text.medium .svg-icon {
+    margin-bottom: .4rem !important
+}
+
 .hidden_wrap {
     opacity: 0;
     width: 0;
@@ -22,18 +31,13 @@
     gap: 20px
 }
 
-.page_wrap {
-    width: 100%;
-    max-width: var(--krds-contents-wrap-size);
-    padding-left: var(--krds-padding-10);
-    padding-bottom: var(--krds-padding-10)
-}
-
 .sub_content {
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 280px auto;
     min-height: 80rem;
     width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .sub_content .krds-side-navigation {
@@ -575,6 +579,7 @@ span.lstyle-dot::before {
     height: 7.6rem;
     margin: 0 auto var(--spacer4);
     padding: var(--spacer5);
+    background-color: transparent !important
 }
 
 .success-msg+.btn-area {
@@ -644,20 +649,13 @@ span.lstyle-dot::before {
     gap: var(--spacer1);
 }
 
-
-
-.svg-icon {
-    background-color: transparent !important;
-}
-
 .btn-txt {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
 }
 
-.btn-txt[class*=ico-]::after,
-.svg-icon {
+.btn-txt[class*=ico-]::after {
     display: inline-flex;
     width: 2.4rem;
     height: 2.4rem;
@@ -915,21 +913,24 @@ span.lstyle-dot::before {
     height: 100vh;
     background-color: #DEE2E8 !important;
     z-index: 999999;
-    display : none;
+    display: none;
 }
-#totalSearch.active { display : block }
+
+#totalSearch.active {
+    display: block
+}
+
 #totalSearch .modal-close {
     position: absolute;
     top: 2rem;
     right: 2rem;
 }
 
-
 #totalSearch .search_inner {
     padding-top: 5rem;
     max-width: 700px;
-    height : 100%;
-    overflow : auto;
+    height: 100%;
+    overflow: auto;
     padding-left: var(--krds-contents-padding-x);
     padding-right: var(--krds-contents-padding-x);
     margin: 0 auto;
@@ -1067,4 +1068,79 @@ span.lstyle-dot::before {
     align-items: center;
     margin-top: auto;
     padding: var(--spacer2) 0;
+}
+
+.search-top-box {
+    display: flex;
+    align-items: top;
+}
+
+.search-top-box .search-inner+.search-inner {
+    margin-left: 1rem
+}
+
+.search-top-box label {
+    display: block;
+    font-size: 1.3rem
+}
+
+.search-top-box select,
+.search-top-box input {
+    display: block;
+    height: 6rem;
+    line-height: 6rem !important;
+    padding: 0 1rem !important;
+    font-size: 1.4rem !important;
+}
+
+.search-top-box input {
+    width: 25rem;
+    padding-right: 5rem
+}
+
+.search-top-box input+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding: 0 1rem
+}
+
+.total-count {
+    font-weight: bold;
+    margin: 3rem 0 1rem 0
+}
+
+.total-count b {
+    color: var(--primary70)
+}
+
+.bbs_list_type01 a {
+    display: block;
+    position: relative;
+    border-radius: var(--krds-radius-large2);
+    background-color: var(--gray10);
+    padding: 3rem;
+}
+
+.bbs_list_type01 a span {
+    position: absolute;
+    top: 1.5rem;
+    width: 100px;
+}
+
+.bbs_list_type01 a span:first-child {
+    left: 2rem
+}
+
+.bbs_list_type01 a span:last-child {
+    right: 2rem
+}
+
+.bbs_list_type01 a p {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 100px
 }

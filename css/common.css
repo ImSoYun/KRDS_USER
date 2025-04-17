@@ -108,7 +108,7 @@
 	--spacer3: 1.2rem;
 	--spacer2: 0.8rem;
 	--spacer1: 0.4rem;
-	--spacer0: 0;
+	--spacer0: 0 !important;
 	--spacer-default: .1rem;
 	--spacer-default2: .2rem;
 	--spacerfull: 100%;
@@ -239,9 +239,9 @@ textarea {
 	font-size: 1.6rem;
 	font-family: inherit;
 	font-weight: inherit;
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	appearance: auto !important;
+	-webkit-appearance: auto !important;
+	-moz-appearance: auto !important;
 }
 
 textarea {
@@ -289,3 +289,5 @@ textarea[readonly] {
 	background-color: #F6F7FA !important;
 	color: #667183 !important;
 }
+
+.relative { position : relative }
