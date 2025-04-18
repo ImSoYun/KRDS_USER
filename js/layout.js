@@ -201,6 +201,11 @@ let bbsArr = [
                 title: 'view02',
                 href: '/bbs/list04_02.html',
                 sub: null
+            },
+            {
+                title: 'view03',
+                href: '/bbs/list04_03.html',
+                sub: null
             }
         ]
     },

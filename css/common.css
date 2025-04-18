@@ -299,3 +299,10 @@ textarea[readonly] {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
+
+
+.krds-btn.warring {
+    background-color: var(--point40);
+    border-color: var(--point40);
+    color: var(--white)
+}
