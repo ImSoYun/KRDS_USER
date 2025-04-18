@@ -147,6 +147,16 @@ let bbsArr = [
                 href: '/bbs/list01_03.html',
                 sub: null
             },
+            {
+                title: 'list04',
+                href: '/bbs/list01_04.html',
+                sub: null
+            },
+            {
+                title: 'list05',
+                href: '/bbs/list01_05.html',
+                sub: null
+            },
         ]
     },
     {
@@ -170,18 +180,28 @@ let bbsArr = [
         ]
     },
     {
-        title: 'QNA',
+        title: 'FAQ',
         sub: [
             {
-                title: 'qna01',
+                title: 'faq01',
                 href: '/bbs/list03_01.html',
+                sub: null
+            }
+        ]
+    },
+    {
+        title: 'View',
+        sub: [
+            {
+                title: 'view01',
+                href: '/bbs/list04_01.html',
                 sub: null
             },
             {
-                title: 'thumb02',
-                href: '/bbs/list02_02.html',
+                title: 'view02',
+                href: '/bbs/list04_02.html',
                 sub: null
-            },
+            }
         ]
     },
 ];

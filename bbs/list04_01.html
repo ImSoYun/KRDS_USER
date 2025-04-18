@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+</head>
+
+<body>
+    <!-- 건너뛰기 링크 -->
+    <div id="krds-skip-link">
+        <a href="#breadcrumb">본문 바로가기</a>
+    </div>
+    <!-- //건너뛰기 링크 -->
+    <!-- masthead -->
+    <div id="krds-masthead">
+        <div class="toggle-wrap">
+            <div class="toggle-head">
+                <div class="inner">
+                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //masthead -->
+
+    <!-- header -->
+    <div id="headerWrap"></div>
+    <!-- //header -->
+
+    <div class="inner sub_content">
+        <!-- side navigation -->
+        <nav class="krds-side-navigation">
+            <h2 class="lnb-tit"></h2>
+            <!-- lnb-list -->
+            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
+            <!-- //lnb-list -->
+        </nav>
+        <!-- //side navigation -->
+
+
+        <div class="page_wrap">
+            <!-- breadcrumb -->
+            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
+
+            <div class="page-title-wrap">
+                <h1 class="h-tit" id="pageTitle"></h1>
+            </div>
+
+            <div class="bbs_view_01">
+                <div class="bbs_view_title">
+                    <h2>게시판 제목</h2>
+                    <dl>
+                        <dt>작성일</dt>
+                        <dd>2025.01.01</dd>
+                        <dt>작성자</dt>
+                        <dd>홍길동</dd>
+                    </dl>
+                </div>
+                <div class="bbs_view_body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo luctus elit vel ornare.
+                    Pellentesque sodales, mi in ornare congue, quam velit tincidunt mauris, et euismod felis nulla id
+                    lorem. Curabitur finibus molestie posuere. Duis consectetur nec lacus ac condimentum. Nunc in mollis
+                    nisl, nec cursus tortor. Nullam vitae tellus lectus. Nulla id quam vel arcu euismod porttitor.
+                    Vestibulum pellentesque, sapien id venenatis dapibus, leo purus fringilla ipsum, eget euismod lorem
+                    ligula quis dui. Maecenas volutpat consequat quam in iaculis. Vestibulum venenatis metus sed euismod
+                    sagittis. Fusce vestibulum, neque vitae interdum venenatis, arcu ligula fermentum sem, at faucibus
+                    erat risus sed turpis.
+
+                    Fusce sed feugiat mauris. Nullam placerat ut enim ut euismod. Cras tincidunt a mi ut fringilla.
+                    Aliquam interdum magna id venenatis elementum. Phasellus in tristique tortor. Aliquam imperdiet
+                    dolor a mauris consequat elementum. Nulla blandit sodales arcu aliquet rhoncus. Praesent quis
+                    viverra ipsum, vel luctus mi. Mauris sed mauris vel ante lacinia ornare id eu lorem. Fusce sit amet
+                    vehicula magna. Curabitur ullamcorper ex nisl, eget dignissim quam condimentum vitae. Fusce quis
+                    urna condimentum, tincidunt arcu at, ornare leo.
+
+                    Morbi ut scelerisque orci. Donec eleifend congue elit quis condimentum. Nulla aliquam porta metus,
+                    eget sollicitudin lacus faucibus sed. Nulla vel lacus eu purus finibus tempor eu eget magna. Duis
+                    vitae nibh fermentum, posuere tellus sit amet, posuere justo. Suspendisse urna ipsum, convallis in
+                    imperdiet sit amet, dapibus sed enim. Integer aliquet posuere sapien non feugiat. Curabitur
+                    scelerisque bibendum felis, eu consectetur turpis pellentesque at. Mauris nec laoreet dolor. Mauris
+                    ultrices vitae felis eget mollis. Vestibulum nunc felis, efficitur sed nisl non, mollis sagittis
+                    erat. Pellentesque augue elit, aliquam imperdiet dignissim sed, tristique sed massa.
+
+                    Quisque lacinia dui sed augue ullamcorper pretium. Fusce id cursus felis, id vehicula nulla. Proin
+                    porta porttitor sagittis. Aliquam imperdiet efficitur diam, eget posuere metus sagittis egestas. Ut
+                    eget blandit tortor. Nunc non facilisis neque, vitae placerat dolor. Donec vehicula pharetra leo,
+                    interdum convallis metus tempor non. Curabitur lacinia justo id sem aliquet porta. Mauris varius
+                    porttitor elementum. Vivamus maximus neque eget dignissim accumsan. Aliquam ultricies lacus nunc,
+                    sit amet tristique quam hendrerit non. Donec ac augue venenatis, accumsan lorem malesuada, imperdiet
+                    eros. Nunc convallis vitae ante eu aliquam. Phasellus ultricies mauris cursus mi rhoncus
+                    consectetur. Aliquam faucibus finibus sollicitudin. Vestibulum vel sagittis ligula, vitae egestas
+                    elit.
+
+                    Vestibulum at viverra arcu. Nullam vel pulvinar orci, sit amet tempus est. Curabitur lorem nunc,
+                    pellentesque eu ultrices ac, placerat quis elit. Phasellus commodo lorem at blandit rutrum. Aenean
+                    ornare, dolor quis convallis vehicula, tellus nisl fermentum leo, vitae venenatis mi libero in elit.
+                    Vivamus porttitor diam in rutrum hendrerit. Proin ut nibh eu neque dictum posuere.
+                </div>
+                <div class="bbs_view_foot">
+                    <a href="#;"><span>다음</span>다음 글이 없습니다.</a>
+                    <a href="#;"><span>이전</span>이전글 제목 이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="krds-footer"></footer>
+    <!-- //footer -->
+    <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

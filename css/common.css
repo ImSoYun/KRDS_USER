@@ -297,5 +297,5 @@ textarea[readonly] {
 .ellipsis {
 	overflow: hidden;
 	white-space: nowrap;
-	text-overflow: e;
+	text-overflow: ellipsis;
 }

@@ -10,7 +10,7 @@
 
 .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px } 
 
-.sub_content { position : relative; padding-left : 280px; min-height: 80rem; width: 100%; max-width: 1280px; margin: 0 auto; } 
+.sub_content { position : relative; padding-left : 280px; min-height: 80rem; width: 100%; max-width: 1280px; margin: 0 auto; padding-bottom : 10rem } 
 
 .sub_content .krds-side-navigation { position : absolute; top : 0; left : 0; width : 240px; } 
 
@@ -448,6 +448,7 @@ span.lstyle-dot::before { width: .3rem; height: .3rem; background-color: #1D1D1D
 .bbs_list_type02 a:hover { text-decoration: underline; } 
 .bbs_list_type02 dl.head { background-color: #f1f1f1; border-top : 1px solid #ccc; } 
 
+
 .bbs_list_type03 dl { display : table; table-layout: fixed; width : 100% } 
 .bbs_list_type03 dl dt,
 .bbs_list_type03 dl dd { display : table-cell; vertical-align: middle; text-align: center; padding : 1rem; border : 1px solid #f1f1f1; font-size : 1.5rem } 
@@ -461,6 +462,40 @@ span.lstyle-dot::before { width: .3rem; height: .3rem; background-color: #1D1D1D
 .bbs_list_type03 dl.body:last-child dt { border-radius : 0 0 0 1rem; overflow: hidden; } 
 .bbs_list_type03 dl.head dd:last-child { border-radius : 0 1rem 0 0; overflow: hidden; } 
 .bbs_list_type03 dl.body:last-child dd:last-child { border-radius : 0 0 1rem 0; overflow: hidden; } 
+
+
+
+.bbs_list_type04 dl { display : table; table-layout: fixed; width : 100%; border-bottom : 1px solid #f1f1f1 } 
+.bbs_list_type04 dl dt,
+.bbs_list_type04 dl dd { display : table-cell; vertical-align: middle; text-align: center; padding : 1rem;  font-size : 1.5rem } 
+.bbs_list_type04 dl dt { width : 80px } 
+.bbs_list_type04 dl .bbs_lock { width : 80px } 
+.bbs_list_type04 dl .bbs_date { width : 130px } 
+.bbs_list_type04 dl .bbs_state { width : 100px } 
+.bbs_list_type04 a { display : block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding-right : 3rem } 
+.bbs_list_type04 a:hover { text-decoration: underline; } 
+.bbs_list_type04 dl.head { background-color: #f1f1f1;}
+.bbs_list_type04 dl.head dt { border-radius : 1rem 0 0 0; overflow: hidden; } 
+.bbs_list_type04 dl.body:last-child dt { border-radius : 0 0 0 1rem; overflow: hidden; } 
+.bbs_list_type04 dl.head dd:last-child { border-radius : 0 1rem 0 0; overflow: hidden; } 
+.bbs_list_type04 dl.body:last-child dd:last-child { border-radius : 0 0 1rem 0; overflow: hidden; } 
+.bbs_list_type04 .svg-icon { background-color: transparent !important;}
+
+
+.bbs_list_type05 { border-top : 2px solid #000 }
+.bbs_list_type05 li { position : relative; padding : 2rem 0; border-bottom : 1px solid #ccc; transition: all .3s ease; } 
+.bbs_list_type05 li:hover { background-color: #f1f1f1; padding : 2rem }
+.bbs_list_type05 p { margin-bottom : 1rem }
+.bbs_list_type05 p span { display : inline-block; padding : .5rem 1rem; font-size : 1.2rem; background: var(--secondary30); color : #fff }
+.bbs_list_type05 p span + span { background: var(--secondary80); }
+.bbs_list_type05 a { display : block; font-size : 2rem; font-weight: bold; margin : 1rem 0 }
+.bbs_list_type05 dl { display : flex; justify-content: space-between; }
+
+
+
+
+
+
 
 .bbs_thumb_type01 { margin : 0 -1rem; overflow : hidden } 
 .bbs_thumb_type01 .wrap { float : left; width : 33.33%; padding : 1rem } 
@@ -500,6 +535,32 @@ span.lstyle-dot::before { width: .3rem; height: .3rem; background-color: #1D1D1D
 .bbs_thumb_type03 ul li span { position : relative; display : inline-block; width : 70px; } 
 .bbs_thumb_type03 ul li span:after { content : ''; width : 2px; height : 10px; background : var(--secondary80); display : inline-block; position : absolute; top : 6px; right : 15px }
 .bbs_thumb_type03 a:hover { text-decoration: underline;}
+
+.bbs_faq_01 .accordion-body { padding : 2rem !important; background-color: #f1f1f1 !important;}
+
+
+.bbs_view_01 { border-top : 2px solid #000 }
+.bbs_view_01 .bbs_view_title { padding : 3rem 2rem; border-bottom : 1px solid #ccc }
+.bbs_view_01 .bbs_view_title dl { display :flex; margin-top : 1rem }
+.bbs_view_01 .bbs_view_title dl dt { width : 80px; font-weight: bold; }
+.bbs_view_01 .bbs_view_body { padding : 3rem; border-bottom : 1px solid #ccc }
+.bbs_view_01 .bbs_view_foot a { display : block; border-bottom : 1px solid #ccc; padding : 2rem; text-overflow: ellipsis; overflow : hidden; white-space: nowrap; }
+.bbs_view_01 .bbs_view_foot a:hover { background-color: #f1f1f1;}
+.bbs_view_01 .bbs_view_foot a span { display : inline-block; width : 80px; text-align : center; font-weight: bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
