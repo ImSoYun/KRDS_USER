@@ -1,127 +1,65 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
-
-    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <title>NEW KRDS USER</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <!-- 건너뛰기 링크 -->
-    <div id="krds-skip-link">
-        <a href="#breadcrumb">본문 바로가기</a>
-    </div>
-    <!-- //건너뛰기 링크 -->
-    <!-- masthead -->
-    <div id="krds-masthead">
-        <div class="toggle-wrap">
-            <div class="toggle-head">
-                <div class="inner">
-                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
-                </div>
-            </div>
+    <div id="noriTop">
+        <div class="inner flex align">
+            <img src="/img/common/ico_flag.svg" alt="">
+            이 누리집은 대한민국 공식 전자정부 누리집입니다.
         </div>
     </div>
-    <!-- //masthead -->
-
-    <!-- header -->
-    <div id="headerWrap"></div>
-    <!-- //header -->
-
+    <header id="headerPc"></header>
+    <header id="headerMobile"></header>
     <div class="inner sub_content">
-        <!-- side navigation -->
-        <nav class="krds-side-navigation">
-            <h2 class="lnb-tit">컴포넌트</h2>
-            <!-- lnb-list -->
-            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
-            <!-- //lnb-list -->
+        <nav>
+            <h2 id="subTitle">컴포넌트</h2>
+            <ul class="lnb-list" id="sideNav"></ul>
         </nav>
-        <!-- //side navigation -->
 
         <div class="page_wrap">
-            <!-- breadcrumb -->
-            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
-
+            <div id="breadcrumb"></div>
             <div class="page-title-wrap">
                 <h1 class="h-tit" id="pageTitle"></h1>
             </div>
+        </div>
 
-
-            <h4 class="con-tit">기본</h4>
-            <!-- accordion -->
-            <div class="krds-accordion">
-                <div class="accordion-item">
-                    <h5 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                            class="btn-accordion" aria-controls="accordionCollapseSample01">아코디언 타이틀 영역</button></h5>
-                    <div id="accordionCollapseSample01" class="accordion-collapse collapse"
-                        aria-labelledby="accordionHeaderSample01">
-                        <div class="accordion-body">
-                            <!-- accordion contents -->
-                            아코디언 내용 영역
-                            <!-- //accordion contents -->
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h5 class="accordion-header"><button type="button" id="accordionHeaderSample02"
-                            class="btn-accordion" aria-controls="accordionCollapseSample02">아코디언 타이틀 영역</button></h5>
-                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
-                        aria-labelledby="accordionHeaderSample02">
-                        <div class="accordion-body">
-                            <!-- accordion contents -->
-                            아코디언 내용 영역
-                            <!-- //accordion contents -->
-                        </div>
+        <div class="accordion_wrap">
+            <div class="acco_inner">
+                <button class="toggle_title">버튼 <i class="svg_icon ico_angle "></i></button>
+                <div class="toggle_content">
+                    <div class="toggle_inner">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+                        laudantium consequatur cumque repellendus, sit ducimus iste doloremque accusantium autem.
+                        Itaque, voluptatum. Dolorum ratione laborum aliquid ab ullam aut nobis eaque?
                     </div>
                 </div>
             </div>
-            <!-- //accordion -->
-
-
-            <h4 class="con-tit">라인형</h4>
-
-            <!-- accordion -->
-            <div class="krds-accordion type-line">
-                <div class="accordion-item">
-                    <h5 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                            class="btn-accordion" aria-controls="accordionCollapseSample01">아코디언 타이틀 영역</button></h5>
-                    <div id="accordionCollapseSample01" class="accordion-collapse collapse"
-                        aria-labelledby="accordionHeaderSample01">
-                        <div class="accordion-body">
-                            <!-- accordion contents -->
-                            아코디언 내용 영역
-                            <!-- //accordion contents -->
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h5 class="accordion-header"><button type="button" id="accordionHeaderSample02"
-                            class="btn-accordion" aria-controls="accordionCollapseSample02">아코디언 타이틀 영역</button></h5>
-                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
-                        aria-labelledby="accordionHeaderSample02">
-                        <div class="accordion-body">
-                            <!-- accordion contents -->
-                            아코디언 내용 영역
-                            <!-- //accordion contents -->
-                        </div>
+            <div class="acco_inner">
+               <button class="toggle_title">버튼 <i class="svg_icon ico_angle "></i></button>
+                <div class="toggle_content">
+                    <div class="toggle_inner">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+                        laudantium consequatur cumque repellendus, sit ducimus iste doloremque accusantium autem.
+                        Itaque, voluptatum. Dolorum ratione laborum aliquid ab ullam aut nobis eaque?
                     </div>
                 </div>
             </div>
-            <!-- //accordion -->
-
         </div>
     </div>
 
 
-    <!-- footer -->
-    <footer id="krds-footer"></footer>
-    <!-- //footer -->
+    <footer></footer>
     <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
+
 </body>
 
 </html>

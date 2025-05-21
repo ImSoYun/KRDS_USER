@@ -1,0 +1,46 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="20" cy="20" r="20" fill="#F5F5F5"/>
+<path d="M20 11.7812C14.4759 11.7812 10 15.1254 10 19.254C10 21.9401 11.898 24.2971 14.743 25.6134C14.5326 26.3519 13.9862 28.288 13.877 28.7012C13.7434 29.2139 14.0753 29.2101 14.2938 29.0685C14.4638 28.9614 17.0336 27.3084 18.1425 26.5967C18.7454 26.6809 19.3646 26.7268 20 26.7268C25.5241 26.7268 30 23.3788 30 19.254C30 15.1293 25.5241 11.7812 20 11.7812Z" fill="#5E5F5F"/>
+<path d="M15.9774 17.0547H13.0515C12.7763 17.0547 12.5537 17.2651 12.5537 17.5253C12.5537 17.7855 12.7763 17.996 13.0515 17.996H14.0025V21.3095C14.0025 21.4282 14.0551 21.5468 14.1442 21.6348C14.2332 21.719 14.3586 21.7687 14.4841 21.7687H14.5893C14.7148 21.7687 14.8402 21.719 14.9293 21.6348C15.0183 21.5506 15.0709 21.432 15.0709 21.3095V17.996H15.9693C16.2445 17.996 16.4671 17.7855 16.4671 17.5253C16.4671 17.2651 16.2445 17.0547 15.9693 17.0547H15.9774Z" fill="#F5F5F5"/>
+<path d="M23.0027 20.8796H21.6429V17.4972C21.6429 17.214 21.4001 16.9883 21.1047 16.9883C20.8092 16.9883 20.5664 17.2179 20.5664 17.4972V21.1437C20.5664 21.1704 20.5664 21.1972 20.5745 21.224C20.5705 21.2508 20.5664 21.2776 20.5664 21.3044C20.5664 21.5416 20.7688 21.7329 21.0197 21.7329H23.0067C23.2576 21.7329 23.4559 21.5416 23.4559 21.3044C23.4559 21.0671 23.2536 20.8796 23.0067 20.8796H23.0027Z" fill="#F5F5F5"/>
+<path d="M27.3494 21.0366L25.8358 19.1541L27.2037 17.8608C27.3899 17.6848 27.3899 17.4016 27.2037 17.2256C27.0176 17.0496 26.7181 17.0496 26.5319 17.2256L24.8363 18.8288V17.5011C24.8363 17.2179 24.5934 16.9922 24.298 16.9922C24.0026 16.9922 23.7598 17.2218 23.7598 17.5011V21.2585C23.7598 21.5417 24.0026 21.7674 24.298 21.7674C24.5934 21.7674 24.8363 21.5378 24.8363 21.2585V20.0992L25.1438 19.8084L26.5764 21.5876C26.7343 21.7904 27.0378 21.8286 27.2523 21.6794C27.4668 21.5264 27.5072 21.2432 27.3494 21.0404V21.0366Z" fill="#F5F5F5"/>
+<path d="M20.162 21.159L18.7051 17.39C18.7051 17.39 18.7051 17.39 18.701 17.3862C18.6079 17.1566 18.3408 16.9883 18.0171 16.9883C17.661 16.9883 17.3655 17.1949 17.3089 17.4627C17.3008 17.4819 17.2886 17.501 17.2805 17.524L15.8479 21.159C15.7589 21.3962 15.8924 21.6564 16.1434 21.7406C16.3943 21.8247 16.6695 21.6985 16.7585 21.4612L17.0054 20.7916H19.0005L19.2474 21.4612C19.3364 21.6985 19.6116 21.8247 19.8625 21.7406C20.1134 21.6564 20.247 21.3962 20.1579 21.159H20.162ZM17.3251 19.9384L17.9969 18.1285C17.9969 18.1285 18.009 18.1285 18.0171 18.1285L18.6848 19.9345H17.3251V19.9384Z" fill="#F5F5F5"/>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

@@ -1,102 +1,68 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
-
-    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <title>NEW KRDS USER</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <!-- 건너뛰기 링크 -->
-    <div id="krds-skip-link">
-        <a href="#breadcrumb">본문 바로가기</a>
-    </div>
-    <!-- //건너뛰기 링크 -->
-    <!-- masthead -->
-    <div id="krds-masthead">
-        <div class="toggle-wrap">
-            <div class="toggle-head">
-                <div class="inner">
-                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
-                </div>
-            </div>
+    <div id="noriTop">
+        <div class="inner flex align">
+            <img src="/img/common/ico_flag.svg" alt="">
+            이 누리집은 대한민국 공식 전자정부 누리집입니다.
         </div>
     </div>
-    <!-- //masthead -->
-
-    <!-- header -->
-    <div id="headerWrap"></div>
-    <!-- //header -->
-
+    <header id="headerPc"></header>
+    <header id="headerMobile"></header>
     <div class="inner sub_content">
-        <!-- side navigation -->
-        <nav class="krds-side-navigation">
-            <h2 class="lnb-tit">컴포넌트</h2>
-            <!-- lnb-list -->
-            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
-            <!-- //lnb-list -->
+        <nav>
+            <h2 id="subTitle">컴포넌트</h2>
+            <ul class="lnb-list" id="sideNav"></ul>
         </nav>
-        <!-- //side navigation -->
 
         <div class="page_wrap">
-            <!-- breadcrumb -->
-            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
-
+            <div id="breadcrumb"></div>
             <div class="page-title-wrap">
                 <h1 class="h-tit" id="pageTitle"></h1>
             </div>
-
-            <!-- critical alerts -->
-            <ul class="krds-critical-alerts">
-                <li>
-                    <div class="critical-ban">
-                        <span class="critical-badge danger">긴급</span>
-                        <p class="critical-txt">긴급 공지 내용 표시</p>
-                        <a href="#" class="krds-btn medium link basic">
-                            <span class="m-hide">자세히 보기</span>
-                            <i class="svg-icon ico-angle right"></i>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="critical-ban">
-                        <span class="critical-badge ok">안전</span>
-                        <p class="critical-txt">긴급 공지 내용 표시</p>
-                        <a href="#" class="krds-btn medium link basic">
-                            <span class="m-hide">자세히 보기</span>
-                            <i class="svg-icon ico-angle right"></i>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="critical-ban">
-                        <span class="critical-badge info">안내</span>
-                        <p class="critical-txt">긴급 공지 내용 표시</p>
-                        <a href="#" class="krds-btn medium link basic">
-                            <span class="m-hide">자세히 보기</span>
-                            <i class="svg-icon ico-angle right"></i>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-            <!-- //critical alerts -->
-
-            <!-- pagination -->
-            <div class="krds-pagination" id="paging"></div>
-            <!-- //pagination -->
         </div>
+
+        <div class="critical_alert">
+            <span class="btn btn_sm bg_danger">
+                <img src="/img/common/ico_danger.svg" alt="">
+                긴급
+            </span>
+            <p>긴급 공지 내용 </p>
+            <a href="#;">자세히 보기<i class="svg_icon ico_angle right"></i></a>
+        </div>
+
+        <div class="critical_alert">
+            <span class="btn btn_sm bg_green">
+                <img src="/img/common/ico_ok.svg" alt="">
+                안전
+            </span>
+            <p>긴급 공지 내용 </p>
+            <a href="#;">자세히 보기<i class="svg_icon ico_angle right"></i></a>
+        </div>
+
+        <div class="critical_alert">
+            <span class="btn btn_sm bg_lightblue alert">
+                <img src="/img/common/ico_info.svg" alt="">
+                안내
+            </span>
+            <p>긴급 공지 내용 </p>
+            <a href="#;">자세히 보기<i class="svg_icon ico_angle right"></i></a>
+        </div>
+
+
     </div>
-
-
-    <!-- footer -->
-    <footer id="krds-footer"></footer>
-    <!-- //footer -->
+    <footer></footer>
     <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

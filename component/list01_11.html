@@ -1,171 +1,81 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
-
-    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <title>NEW KRDS USER</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <!-- 건너뛰기 링크 -->
-    <div id="krds-skip-link">
-        <a href="#breadcrumb">본문 바로가기</a>
-    </div>
-    <!-- //건너뛰기 링크 -->
-    <!-- masthead -->
-    <div id="krds-masthead">
-        <div class="toggle-wrap">
-            <div class="toggle-head">
-                <div class="inner">
-                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
-                </div>
-            </div>
+    <div id="noriTop">
+        <div class="inner flex align">
+            <img src="/img/common/ico_flag.svg" alt="">
+            이 누리집은 대한민국 공식 전자정부 누리집입니다.
         </div>
     </div>
-    <!-- //masthead -->
-
-    <!-- header -->
-    <div id="headerWrap"></div>
-    <!-- //header -->
-
+    <header id="headerPc"></header>
+    <header id="headerMobile"></header>
     <div class="inner sub_content">
-        <!-- side navigation -->
-        <nav class="krds-side-navigation">
-            <h2 class="lnb-tit">컴포넌트</h2>
-            <!-- lnb-list -->
-            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
-            <!-- //lnb-list -->
+        <nav>
+            <h2 id="subTitle">컴포넌트</h2>
+            <ul class="lnb-list" id="sideNav"></ul>
         </nav>
-        <!-- //side navigation -->
 
         <div class="page_wrap">
-            <!-- breadcrumb -->
-            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
-
+            <div id="breadcrumb"></div>
             <div class="page-title-wrap">
                 <h1 class="h-tit" id="pageTitle"></h1>
             </div>
-
-            <h4 class="con-tit">순서 없는 목록</h4>
-            <!-- text list -->
-            <!-- krds-info-list -->
-            <ul class="krds-info-list decimal">
-                <li>텍스트 목록 레벨1</li>
-                <li>
-                    텍스트 목록 레벨1
-                    <ul class="krds-info-list dash">
-                        <li>텍스트 목록 레벨2</li>
-                        <li>
-                            텍스트 목록 레벨2
-                            <ul class="krds-info-list hollow">
-                                <li>텍스트 목록 레벨3</li>
-                                <li>텍스트 목록 레벨3</li>
-                            </ul>
-                        </li>
-                        <li>텍스트 목록 레벨2</li>
-                    </ul>
-                </li>
-                <li>텍스트 목록 레벨1</li>
-            </ul>
-
-            <br>
-            <br>
-
-            <ul class="krds-info-list decimal">
-                <li>
-                    텍스트 목록 레벨1
-                    <ul class="krds-info-list dash">
-                        <li>
-                            텍스트 목록 레벨2
-                            <ol class="krds-info-list ordered">
-                                <li><span class="num">①</span>텍스트 목록 레벨3</li>
-                                <li><span class="num">②</span>텍스트 목록 레벨3</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    텍스트 목록 레벨1
-                    <ol class="krds-info-list ordered">
-                        <li>
-                            <span class="num">a. </span>텍스트 목록 레벨2
-                            <ul class="krds-info-list hollow">
-                                <li>텍스트 목록 레벨3</li>
-                                <li>텍스트 목록 레벨3</li>
-                            </ul>
-                        </li>
-                    </ol>
-                </li>
-            </ul>
-            <!-- //krds-info-list -->
-            <!-- //text list -->
-
-            <h4 class="con-tit">순서 있는 목록</h4>
-            <!-- text list -->
-            <!-- krds-info-list -->
-            <ol class="krds-info-list ordered">
-                <li><span class="num">1. </span>텍스트 목록 레벨1</li>
-                <li>
-                    <span class="num">2. </span>텍스트 목록 레벨1
-                    <ol class="krds-info-list ordered">
-                        <li><span class="num">a. </span>텍스트 목록 레벨2</li>
-                        <li>
-                            <span class="num">b. </span>텍스트 목록 레벨2
-                            <ol class="krds-info-list ordered">
-                                <li><span class="num">①</span>텍스트 목록 레벨3</li>
-                                <li><span class="num">②</span>텍스트 목록 레벨3</li>
-                            </ol>
-                        </li>
-                        <li><span class="num">c. </span>텍스트 목록 레벨2</li>
-                    </ol>
-                </li>
-                <li><span class="num">3. </span>텍스트 목록 레벨1</li>
-            </ol>
-
-            <br>
-            <br>
-
-            <ol class="krds-info-list ordered">
-                <li>
-                    <span class="num">1. </span>텍스트 목록 레벨1
-                    <ul class="krds-info-list dash">
-                        <li>
-                            텍스트 목록 레벨2
-                            <ol class="krds-info-list ordered">
-                                <li><span class="num">①</span>텍스트 목록 레벨3</li>
-                                <li><span class="num">②</span>텍스트 목록 레벨3</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <span class="num">2. </span>텍스트 목록 레벨1
-                    <ol class="krds-info-list ordered">
-                        <li>
-                            <span class="num">a. </span>텍스트 목록 레벨2
-                            <ul class="krds-info-list hollow">
-                                <li>텍스트 목록 레벨3</li>
-                                <li>텍스트 목록 레벨3</li>
-                            </ul>
-                        </li>
-                    </ol>
-                </li>
-            </ol>
-            <!-- //krds-info-list -->
-            <!-- //text list -->
         </div>
+
+        <ul class="info_list decimal" role="list">
+            <li>텍스트 목록 레벨1</li>
+            <li>
+                텍스트 목록 레벨1
+                <ul class="info_list dash">
+                    <li>텍스트 목록 레벨2</li>
+                    <li>
+                        텍스트 목록 레벨2
+                        <ul class="info_list hollow">
+                            <li>텍스트 목록 레벨3</li>
+                            <li>텍스트 목록 레벨3</li>
+                        </ul>
+                    </li>
+                    <li>텍스트 목록 레벨2</li>
+                </ul>
+            </li>
+            <li>텍스트 목록 레벨1</li>
+            <li>
+                텍스트 목록 레벨1
+                <ol class="info_list ordered">
+                    <li><span class="num">①</span>텍스트 목록 레벨3</li>
+                    <li><span class="num">②</span>텍스트 목록 레벨3</li>
+                </ol>
+            </li>
+            <li>
+                텍스트 목록 레벨1
+                <ol class="info_list ordered">
+                    <li><span class="num">1.</span>텍스트 목록 레벨3</li>
+                    <li><span class="num">2.</span>텍스트 목록 레벨3</li>
+                </ol>
+            </li>
+            <li>
+                텍스트 목록 레벨1
+                <ol class="info_list ordered">
+                    <li><span class="num">a.</span>텍스트 목록 레벨3</li>
+                    <li><span class="num">b.</span>텍스트 목록 레벨3</li>
+                </ol>
+            </li>
+        </ul>
     </div>
 
-
-    <!-- footer -->
-    <footer id="krds-footer"></footer>
-    <!-- //footer -->
+    <footer></footer>
     <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
+
 </body>
 
 </html>

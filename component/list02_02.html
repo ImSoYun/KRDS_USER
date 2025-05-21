@@ -1,1210 +1,792 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
-
-    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <title>NEW KRDS USER</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <!-- 건너뛰기 링크 -->
-    <div id="krds-skip-link">
-        <a href="#breadcrumb">본문 바로가기</a>
-    </div>
-    <!-- //건너뛰기 링크 -->
-    <!-- masthead -->
-    <div id="krds-masthead">
-        <div class="toggle-wrap">
-            <div class="toggle-head">
-                <div class="inner">
-                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
-                </div>
-            </div>
+    <div id="noriTop">
+        <div class="inner flex align">
+            <img src="/img/common/ico_flag.svg" alt="">
+            이 누리집은 대한민국 공식 전자정부 누리집입니다.
         </div>
     </div>
-    <!-- //masthead -->
-
-    <!-- header -->
-    <div id="headerWrap"></div>
-    <!-- //header -->
-
+    <header id="headerPc"></header>
+    <header id="headerMobile"></header>
     <div class="inner sub_content">
-        <!-- side navigation -->
-        <nav class="krds-side-navigation">
-            <h2 class="lnb-tit">컴포넌트</h2>
-            <!-- lnb-list -->
-            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
-            <!-- //lnb-list -->
+        <nav>
+            <h2 id="subTitle">컴포넌트</h2>
+            <ul class="lnb-list" id="sideNav"></ul>
         </nav>
-        <!-- //side navigation -->
 
         <div class="page_wrap">
-            <!-- breadcrumb -->
-            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
-
+            <div id="breadcrumb"></div>
             <div class="page-title-wrap">
                 <h1 class="h-tit" id="pageTitle"></h1>
             </div>
+        </div>
 
-            <div class="input_wrap">
-                <div class="input_inner">
-                    <h4 class="con-tit">라디오 버튼</h4>
-                    <!-- radio button -->
-                    <div class="fieldset">
-                        <div class="form-group">
-                            <div class="form-conts">
-                                <div class="krds-check-area">
-                                    <div class="krds-form-check">
-                                        <input type="radio" name="rdo_1" id="rdo_1">
-                                        <label for="rdo_1">기본</label>
-                                    </div>
-                                    <div class="krds-form-check">
-                                        <input type="radio" name="rdo_1" id="rdo_2" checked>
-                                        <label for="rdo_2">선택됨</label>
-                                    </div>
-                                    <div class="krds-form-check">
-                                        <input type="radio" name="rdo_1" id="rdo_3" disabled>
-                                        <label for="rdo_3">비활성화</label>
-                                    </div>
-                                    <div class="krds-form-check">
-                                        <input type="radio" name="rdo_1a" id="rdo_4" disabled checked>
-                                        <label for="rdo_4">선택된 비활성화</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="form-conts">
-                                <div class="krds-check-area chk-column">
-                                    <div class="krds-form-check ">
-                                        <input type="radio" name="rdo_1" id="rdo_1-1" checked>
-                                        <label for="rdo_1-1">라디오버튼</label>
-                                        <div class="krds-form-check-cnt">
-                                            <p class="krds-form-check-p">
-                                                부가적인 설명이 들어갑니다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="krds-form-check">
-                                        <input type="radio" name="rdo_1" id="rdo_1-2">
-                                        <label for="rdo_1-2">라디오버튼</label>
-                                        <div class="krds-form-check-cnt">
-                                            <p class="krds-form-check-p">
-                                                부가적인 설명이 들어갑니다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //radio button -->
-
-                    <h4 class="con-tit">라디오 버튼 사이즈</h4>
-                    <!-- radio button -->
-                    <div class="krds-check-area">
-                        <div class="krds-form-check medium">
-                            <input type="radio" name="rdo_2-1" id="rdo_2-2">
-                            <label for="rdo_2-2">사이즈 : medium</label>
-                        </div>
-                        <div class="krds-form-check large">
-                            <input type="radio" name="rdo_2-1" id="rdo_2-3">
-                            <label for="rdo_2-3">사이즈 : large</label>
-                        </div>
-                    </div>
-                    <!-- //radio button -->
-
-                    <h4 class="con-tit">chip</h4>
-                    <!-- radio button -->
-                    <div class="krds-check-area">
-                        <div class="krds-form-chip">
-                            <input type="radio" class="radio" name="rdo_chip" id="rdo_chip_1">
-                            <label class="krds-form-chip-outline" for="rdo_chip_1">chip 상태 : default </label>
-                        </div>
-                        <div class="krds-form-chip">
-                            <input type="radio" class="radio" name="rdo_chip" id="rdo_chip_2" checked>
-                            <label class="krds-form-chip-outline" for="rdo_chip_2">chip 상태 : checked </label>
-                        </div>
-                        <div class="krds-form-chip">
-                            <input type="radio" class="radio" name="rdo_chip" id="rdo_chip_3" disabled>
-                            <label class="krds-form-chip-outline" for="rdo_chip_3">chip 상태 :disabled </label>
-                        </div>
-                    </div>
-                    <!-- //radio button -->
-                </div>
-
-                <div class="input_inner">
-                    <h4 class="con-tit">체크박스</h4>
-                    <!-- checkbox -->
-                    <div class="fieldset">
-                        <div class="form-group">
-                            <div class="form-conts">
-                                <div class="krds-check-area">
-                                    <div class="krds-form-check">
-                                        <input type="checkbox" name="chk_1" id="chk_1">
-                                        <label for="chk_1">기본</label>
-                                    </div>
-                                    <div class="krds-form-check">
-                                        <input type="checkbox" name="chk_1" id="chk_2" checked>
-                                        <label for="chk_2">선택됨</label>
-                                    </div>
-                                    <div class="krds-form-check">
-                                        <input type="checkbox" name="chk_1" id="chk_3" disabled>
-                                        <label for="chk_3">비활성화</label>
-                                    </div>
-                                    <div class="krds-form-check">
-                                        <input type="checkbox" name="chk_1" id="chk_4" disabled checked>
-                                        <label for="chk_4">선택된 비활성화</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="form-conts">
-                                <div class="krds-check-area chk-column">
-                                    <div class="krds-form-check ">
-                                        <input type="checkbox" id="chk_additional_1" checked>
-                                        <label for="chk_additional_1">체크박스</label>
-                                        <div class="krds-form-check-cnt">
-                                            <p class="krds-form-check-p">
-                                                부가적인 설명이 들어갑니다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="krds-form-check">
-                                        <input type="checkbox" id="chk_additional_2">
-                                        <label for="chk_additional_2">체크박스</label>
-                                        <div class="krds-form-check-cnt">
-                                            <p class="krds-form-check-p">
-                                                부가적인 설명이 들어갑니다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //checkbox -->
-
-                    <h4 class="con-tit">체크박스 사이즈</h4>
-                    <!-- checkbox -->
-                    <div class="krds-check-area">
-                        <div class="krds-form-check medium">
-                            <input type="checkbox" id="chk_1-2a">
-                            <label for="chk_1-2a">사이즈 : medium</label>
-                        </div>
-                        <div class="krds-form-check large">
-                            <input type="checkbox" id="chk_1-3a">
-                            <label for="chk_1-3a">사이즈 : large</label>
-                        </div>
-                    </div>
-                    <!-- //checkbox -->
-                    <h4 class="con-tit">chip</h4>
-                    <!-- checkbox -->
-                    <div class="krds-check-area">
-                        <div class="krds-form-chip">
-                            <input type="checkbox" class="checkbox" id="chk_chip_1">
-                            <label class="krds-form-chip-outline" for="chk_chip_1">chip 상태 : default</label>
-                        </div>
-                        <div class="krds-form-chip">
-                            <input type="checkbox" class="checkbox" id="chk_chip_2" checked>
-                            <label class="krds-form-chip-outline" for="chk_chip_2">chip 상태 : checked</label>
-                        </div>
-                        <div class="krds-form-chip">
-                            <input type="checkbox" class="checkbox" id="chk_chip_3" disabled>
-                            <label class="krds-form-chip-outline" for="chk_chip_3">chip 상태 : disabled</label>
-                        </div>
-                    </div>
-                    <!-- //checkbox -->
-                </div>
-
-                <div class="input_inner">
-                    <h4 class="con-tit">셀렉트</h4>
-                    <!-- select -->
-                    <div class="fieldset">
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="select_name">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <select id="select_name" class="krds-form-select" title="선택">
-                                    <option value="">항목1</option>
-                                    <option value="">항목2</option>
-                                    <option value="">항목3</option>
-                                    <option value="">항목4</option>
-                                </select>
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="select_name4">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <select id="select_name4" class="krds-form-select completed" title="선택">
-                                    <option value="" selected>선택완료 상태</option>
-                                    <option value="">항목2</option>
-                                    <option value="">항목3</option>
-                                    <option value="">항목4</option>
-                                </select>
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="select_error">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <select id="select_error" class="krds-form-select is-error" title="선택">
-                                    <option value="">항목1</option>
-                                    <option value="">항목2</option>
-                                    <option value="">항목3</option>
-                                    <option value="">항목4</option>
-                                </select>
-                            </div>
-                            <p class="form-hint-invalid">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="select_name3">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <select id="select_name3" class="krds-form-select" title="선택" disabled>
-                                    <option value="">disabled</option>
-                                    <option value="">항목2</option>
-                                    <option value="">항목3</option>
-                                    <option value="">항목4</option>
-                                </select>
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                    </div>
-                    <!-- //select -->
-                    <h4 class="con-tit">사이즈</h4>
-                    <!-- select -->
-                    <div class="fieldset">
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="select_size_small">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <select id="select_size_small" class="krds-form-select large" title="선택">
-                                    <option value="" selected>large</option>
-                                    <option value="">medium</option>
-                                    <option value="">small</option>
-                                </select>
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="select_size_medium">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <select id="select_size_medium" class="krds-form-select medium" title="선택">
-                                    <option value="">large</option>
-                                    <option value="" selected>medium</option>
-                                    <option value="">small</option>
-                                </select>
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="select_size_large">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <select id="select_size_large" class="krds-form-select small" title="선택">
-                                    <option value="">large</option>
-                                    <option value="">medium</option>
-                                    <option value="" selected>small</option>
-                                </select>
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                    </div>
-                    <!-- //select -->
-
-                    <h4 class="con-tit">상태</h4>
-                    <!-- select -->
-                    <div class="fieldset">
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="select_error">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <select id="select_error" class="krds-form-select is-error" title="선택">
-                                    <option value="">항목1</option>
-                                    <option value="">항목2</option>
-                                    <option value="">항목3</option>
-                                    <option value="">항목4</option>
-                                </select>
-                            </div>
-                            <p class="form-hint-invalid">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                    </div>
-                    <!-- //select -->
-
-                    <h4 class="con-tit">정렬</h4>
-                    <!-- select -->
-                    <select id="select_sorting" class="krds-form-select-sort" title="선택">
-                        <option value="">항목1</option>
-                        <option value="">항목2</option>
-                        <option value="">항목3</option>
-                        <option value="">항목4</option>
-                    </select>
-                    <select id="select_sorting_large" class="krds-form-select-sort large" title="선택">
-                        <option value="" selected>항목1</option>
-                        <option value="">항목2</option>
-                        <option value="">항목3</option>
-                    </select>
-                    <select id="select_sorting_medium" class="krds-form-select-sort medium" title="선택">
-                        <option value="">항목1</option>
-                        <option value="" selected>항목2</option>
-                        <option value="">항목3</option>
-                    </select>
-                    <select id="select_sorting_small" class="krds-form-select-sort small" title="선택">
-                        <option value="">항목1</option>
-                        <option value="">항목2</option>
-                        <option value="" selected>항목3</option>
-                    </select>
-                    <!-- //select -->
-
-                </div>
-
-                <div class="input_inner">
-                    <h4 class="con-tit">입력</h4>
-                    <!-- date input -->
-                    <!-- 폼그룹 -->
-                    <div class="form-group">
-                        <div class="form-tit">
-                            <label for="cal">레이블</label>
-                        </div>
-                        <div class="form-conts">
-                            <div class="form-conts calendar-conts">
-                                <div class="calendar-input">
-                                    <input type="number" class="krds-input datepicker cal" placeholder="YYYY.MM.DD"
-                                        id="cal" />
-                                    <button type="button" class="krds-btn medium icon form-btn-datepicker">
-                                        <span class="sr-only">달력 열기</span>
-                                        <i class="svg-icon ico-calendar"></i>
-                                    </button>
-                                </div>
-                                <div class="krds-calendar-area">
-                                    <div class="calendar-wrap bottom" aria-label="달력">
-                                        <div class="calendar-head">
-                                            <button type="button" class="btn-cal-move prev"><span class="sr-only">이전
-                                                    달</span></button>
-                                            <div class="calendar-switch-wrap">
-                                                <div class="calendar-drop-down">
-                                                    <button type="button" class="btn-cal-switch year"
-                                                        aria-label="연도 선택">2024년</button>
-                                                    <div class="calendar-select calendar-year-wrap">
-                                                        <ul class="sel year">
-                                                            <li>
-                                                                <button type="button">2001년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button" class="active">2002년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button" disabled>2003년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2004년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2005년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2006년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2007년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2008년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2009년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2010년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2011년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2012년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2013년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2014년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2015년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2016년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2017년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2018년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2019년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2020년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2021년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2022년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2023년</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">2024년</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="calendar-drop-down">
-                                                    <button type="button" class="btn-cal-switch month"
-                                                        aria-label="월 선택">12월</button>
-                                                    <div class="calendar-select calendar-mon-wrap">
-                                                        <ul class="sel month">
-                                                            <li>
-                                                                <button type="button" disabled>01월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">02월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">03월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">04월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">05월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">06월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">07월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">08월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">09월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">10월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button">11월</button>
-                                                            </li>
-                                                            <li>
-                                                                <button type="button" class="active">12월</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button type="button" class="btn-cal-move next"><span class="sr-only">다음
-                                                    달</span></button>
-                                        </div>
-                                        <div class="calendar-body">
-                                            <div class="calendar-table-wrap">
-                                                <table class="calendar-tbl">
-                                                    <caption>
-                                                        2024년 12월
-                                                    </caption>
-                                                    <thead>
-                                                        <tr>
-                                                            <th>일</th>
-                                                            <th>월</th>
-                                                            <th>화</th>
-                                                            <th>수</th>
-                                                            <th>목</th>
-                                                            <th>금</th>
-                                                            <th>토</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="old day-off">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>26</span></button>
-                                                            </td>
-                                                            <td class="old">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>27</span></button>
-                                                            </td>
-                                                            <td class="old">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>28</span></button>
-                                                            </td>
-                                                            <td class="old">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>29</span></button>
-                                                            </td>
-                                                            <td class="old">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>30</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>1</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>2</span></button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="day-off">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>3</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>4</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>5</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>6</span></button>
-                                                            </td>
-                                                            <td class="period start">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>7</span></button>
-                                                            </td>
-                                                            <td class="period">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>8</span></button>
-                                                            </td>
-                                                            <td class="period">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>9</span></button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="period day-off">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>10</span></button>
-                                                            </td>
-                                                            <td class="period">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>11</span></button>
-                                                            </td>
-                                                            <td class="period">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>12</span></button>
-                                                            </td>
-                                                            <td class="period">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>13</span></button>
-                                                            </td>
-                                                            <td class="period">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>14</span></button>
-                                                            </td>
-                                                            <td class="period">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>15</span></button>
-                                                            </td>
-                                                            <td class="period end">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>16</span></button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="day-off">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>17</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>18</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>19</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>20</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>21</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>22</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>23</span></button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="day-off">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>24</span></button>
-                                                            </td>
-                                                            <td class="today">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>25</span></button>
-                                                            </td>
-                                                            <td class="day-event">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>26</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>27</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>28</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>29</span></button>
-                                                            </td>
-                                                            <td>
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>30</span></button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="day-off">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>31</span></button>
-                                                            </td>
-                                                            <td class="new">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>1</span></button>
-                                                            </td>
-                                                            <td class="new">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>2</span></button>
-                                                            </td>
-                                                            <td class="new">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>3</span></button>
-                                                            </td>
-                                                            <td class="new">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>4</span></button>
-                                                            </td>
-                                                            <td class="new">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>5</span></button>
-                                                            </td>
-                                                            <td class="new">
-                                                                <button type="button"
-                                                                    class="btn-set-date"><span>6</span></button>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="calendar-footer">
-                                            <div class="calendar-btn-wrap">
-                                                <button type="button" class="krds-btn small text"
-                                                    id="get-today">오늘</button>
-                                                <button type="button" class="krds-btn small tertiary">취소</button>
-                                                <button type="button" class="krds-btn small primary">확인</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="form-hint">도움말</p>
-                    </div>
-                    <!-- //폼그룹 -->
-                    <!-- //date input -->
-
-                    <!-- text input -->
-                    <div class="fieldset">
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="consult_name">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <input type="text" id="consult_name" class="krds-input" placeholder="플레이스홀더">
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="consult_name2">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <input type="text" id="consult_name2" class="krds-input" placeholder="플레이스홀더"
-                                    value="readonly" readonly>
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="consult_name3">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <input type="text" id="consult_name3" class="krds-input" placeholder="플레이스홀더"
-                                    value="disabled" disabled>
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                    </div>
-                    <!-- //text input -->
-                    <!-- text input -->
-                    <div class="fieldset">
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="consult_name21">레이블</label>
-                            </div>
-                            <div class="form-conts is-error">
-                                <input type="text" id="consult_name21" class="krds-input" placeholder="플레이스홀더"
-                                    value="에러">
-                            </div>
-                            <p class="form-hint-invalid">에러 메시지</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="consult_name22">레이블</label>
-                            </div>
-                            <div class="form-conts is-success">
-                                <input type="text" id="consult_name22" class="krds-input" placeholder="플레이스홀더"
-                                    value="성공">
-                            </div>
-                            <p class="form-hint-success">성공 메시지</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="consult_name23">레이블</label>
-                            </div>
-                            <div class="form-conts is-information">
-                                <input type="text" id="consult_name23" class="krds-input" placeholder="플레이스홀더"
-                                    value="정보">
-                            </div>
-                            <p class="form-hint-information">정보 메시지</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                    </div>
-                    <!-- //text input -->
-                    <!-- text input -->
-                    <div class="fieldset">
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="consult_name31">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <input type="text" id="consult_name31" class="krds-input small" placeholder="플레이스홀더">
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="consult_name32">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <input type="text" id="consult_name32" class="krds-input medium" placeholder="플레이스홀더">
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="consult_name33">레이블</label>
-                            </div>
-                            <div class="form-conts">
-                                <input type="text" id="consult_name33" class="krds-input large" placeholder="플레이스홀더">
-                            </div>
-                            <p class="form-hint">도움말</p>
-                        </div>
-                        <!-- //폼그룹 -->
-                    </div>
-                    <!-- //text input -->
-                    <!-- text input -->
-                    <div class="fieldset">
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="login_pw">레이블</label>
-                            </div>
-                            <div class="form-conts btn-ico-wrap">
-                                <input type="password" id="login_pw" class="krds-input"
-                                    placeholder="8-12자의 영문자, 숫자, 특수문자 조합" value="1234567890">
-                                <button type="button" class="krds-btn medium icon">
-                                    <span class="sr-only">입력한 비밀번호 보기</span>
-                                    <i class="svg-icon ico-pw-visible"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="login_pw2">레이블</label>
-                            </div>
-                            <div class="form-conts btn-ico-wrap">
-                                <input type="text" id="login_pw2" class="krds-input"
-                                    placeholder="8-12자의 영문자, 숫자, 특수문자 조합" value="1234567890">
-                                <button type="button" class="krds-btn medium icon">
-                                    <span class="sr-only">입력한 비밀번호 가리기</span>
-                                    <i class="svg-icon ico-pw-visible-on"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="form_delete">레이블</label>
-                            </div>
-                            <div class="form-conts btn-ico-wrap" data-delete="true">
-                                <input type="text" id="form_delete" class="krds-input" placeholder="내용을 입력하세요">
-                                <button type="button" class="krds-btn medium icon pure btn-delete-input">
-                                    <span class="sr-only">내용 삭제</span>
-                                    <i class="svg-icon ico-delete-fill"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- //폼그룹 -->
-                        <!-- 폼그룹 -->
-                        <div class="form-group">
-                            <div class="form-tit">
-                                <label for="form_btn_multiple">레이블</label>
-                            </div>
-                            <div class="form-conts btn-ico-wrap" data-delete="true">
-                                <input type="password" id="form_btn_multiple" class="krds-input"
-                                    placeholder="8-12자의 영문자, 숫자, 특수문자 조합" value="1234567890">
-                                <div class="btn-group">
-                                    <button type="button" class="krds-btn medium icon pure btn-delete-input">
-                                        <span class="sr-only">내용 삭제</span>
-                                        <i class="svg-icon ico-delete-fill"></i>
-                                    </button>
-                                    <button type="button" class="krds-btn medium icon">
-                                        <span class="sr-only">입력한 비밀번호 보기</span>
-                                        <i class="svg-icon ico-pw-visible"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- //폼그룹 -->
-                    </div>
-                    <!-- //text input -->
-                </div>
-
-                <div class="input_inner">
-                    <h4 class="con-tit">태그</h4>
-                    <!-- tag -->
-                    <div class="krds-tag-wrap large">
-                        <span class="krds-btn-tag">
-                            태그
-                            <button type="button" class="btn-delete">
-                                <span class="sr-only">삭제</span>
-                            </button>
-                        </span>
-                        <span class="krds-btn-tag">
-                            태그
-                            <button type="button" class="btn-delete">
-                                <span class="sr-only">삭제</span>
-                            </button>
-                        </span>
-                        <span class="krds-btn-tag">
-                            태그
-                            <button type="button" class="btn-delete">
-                                <span class="sr-only">삭제</span>
-                            </button>
-                        </span>
-                    </div>
-                    <div class="krds-tag-wrap medium">
-                        <span class="krds-btn-tag">
-                            태그
-                            <button type="button" class="btn-delete">
-                                <span class="sr-only">삭제</span>
-                            </button>
-                        </span>
-                        <span class="krds-btn-tag">
-                            태그
-                            <button type="button" class="btn-delete">
-                                <span class="sr-only">삭제</span>
-                            </button>
-                        </span>
-                        <span class="krds-btn-tag">
-                            태그
-                            <button type="button" class="btn-delete">
-                                <span class="sr-only">삭제</span>
-                            </button>
-                        </span>
-                    </div>
-                    <div class="krds-tag-wrap small">
-                        <span class="krds-btn-tag">
-                            태그
-                            <button type="button" class="btn-delete">
-                                <span class="sr-only">삭제</span>
-                            </button>
-                        </span>
-                        <span class="krds-btn-tag">
-                            태그
-                            <button type="button" class="btn-delete">
-                                <span class="sr-only">삭제</span>
-                            </button>
-                        </span>
-                        <span class="krds-btn-tag">
-                            태그
-                            <button type="button" class="btn-delete">
-                                <span class="sr-only">삭제</span>
-                            </button>
-                        </span>
-                    </div>
-                    <!-- //tag -->
-
-
-                    <h4 class="con-tit">링크형</h4>
-                    <!-- tag -->
-                    <div class="krds-tag-wrap large">
-                        <a href="#" class="krds-btn-tag link">
-                            태그
-                        </a>
-                        <a href="#" class="krds-btn-tag link">
-                            태그
-                        </a>
-                        <a href="#" class="krds-btn-tag link">
-                            태그
-                        </a>
-                    </div>
-                    <div class="krds-tag-wrap medium">
-                        <a href="#" class="krds-btn-tag link">
-                            태그
-                        </a>
-                        <a href="#" class="krds-btn-tag link">
-                            태그
-                        </a>
-                        <a href="#" class="krds-btn-tag link">
-                            태그
-                        </a>
-                    </div>
-                    <div class="krds-tag-wrap small">
-                        <a href="#" class="krds-btn-tag link">
-                            태그
-                        </a>
-                        <a href="#" class="krds-btn-tag link">
-                            태그
-                        </a>
-                        <a href="#" class="krds-btn-tag link">
-                            태그
-                        </a>
-                    </div>
-                    <!-- //tag -->
-
-                </div>
-
-                <div class="input_inner">
-                    <h4 class="con-tit">토글 스위치</h4>
-                    <!-- toggle switch -->
-                    <div class="krds-form-toggle-switch">
-                        <input type="checkbox" id="switch">
-                        <label for="switch"><span class="switch-toggle"><i></i></span>switch : default</label>
-                    </div>
-                    <div class="krds-form-toggle-switch">
-                        <input type="checkbox" id="switch_checked" checked>
-                        <label for="switch_checked"><span class="switch-toggle"><i></i></span>switch : checked</label>
-                    </div>
-                    <div class="krds-form-toggle-switch">
-                        <input type="checkbox" id="switch_disabled_1" disabled>
-                        <label for="switch_disabled_1"><span class="switch-toggle"><i></i></span>switch :
-                            disabled</label>
-                    </div>
-                    <!-- //toggle switch -->
-
-                    <h4 class="con-tit">토글 스위치 사이즈</h4>
-                    <!-- toggle switch -->
-                    <div class="krds-form-toggle-switch large">
-                        <input type="checkbox" id="switch_lg_1">
-                        <label for="switch_lg_1"><span class="switch-toggle"><i></i></span>switch size : large</label>
-                    </div>
-                    <div class="krds-form-toggle-switch medium">
-                        <input type="checkbox" id="switch_lg_md">
-                        <label for="switch_lg_md"><span class="switch-toggle"><i></i></span>switch size : medium</label>
-                    </div>
-                    <!-- //toggle switch -->
-
-                </div>
-
-
-
-                <div class="input_inner">
-                    <h4 class="con-tit">Textarea</h4>
-                    <!-- textarea -->
-                    <!-- 폼그룹 -->
-                    <div class="form-group">
-                        <div class="form-tit">
-                            <label for="textarea">레이블</label>
-                        </div>
-                        <div class="form-conts">
-                            <div class="textarea-wrap">
-                                <textarea class="krds-input" placeholder="플레이스홀더" id="textarea"></textarea>
-                                <p class="textarea-count">
-                                    <span class="count-now">0</span><span class="count-total">/100</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- //폼그룹 -->
-                    <!-- //textarea -->
-                </div>
-
-                <div class="input_inner">
-                    <h4 class="con-tit">토글 스위치</h4>
-                    <!-- file upload -->
-                    <div class="krds-file-upload line">
-                        <!-- 파일 업로드 영역 -->
-                        <div class="file-upload">
-                            <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
-                            <div class="file-upload-btn-wrap">
-                                <input type="file" name="myFile" id="fileu-upload" hidden>
-                                <label for="fileu-upload">
-                                    <button type="button" class="krds-btn medium"><i
-                                            class="svg-icon ico-upload"></i>파일선택</button>
-                                </label>
-                            </div>
-                        </div>
-                        <!-- //파일 업로드 영역 -->
-                        <!-- 파일 리스트 영역 -->
-                        <div class="file-list">
-                            <div class="total"><span class="current">3개</span> / 10개</div>
-                            <ul class="upload-list">
-                                <li>
-                                    <div class="file-info">
-                                        <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
-                                        <div class="btn-wrap">
-                                            <span class="krds-spinner" role="status">
-                                                <span class="sr-only">업로드 중</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="file-info">
-                                        <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
-                                        <div class="btn-wrap">
-                                            <span class="ico-invalid complete">
-                                                <em class="sr-only">업로드 완료</em>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="file-info">
-                                        <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
-                                        <div class="btn-wrap">
-                                            <button type="button" class="krds-btn medium text">삭제 <i
-                                                    class="svg-icon ico-delete-fill"></i></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="is-error">
-                                    <div class="file-info">
-                                        <div class="file-name">전입재등록신고서 [주민등록법 시행령 : 별지서식 15, 15호의2호] [hwp, 17KB]</div>
-                                        <div class="btn-wrap">
-                                            <button type="button" class="krds-btn medium text">삭제 <i
-                                                    class="svg-icon ico-delete-fill"></i></button>
-                                        </div>
-                                    </div>
-                                    <p class="file-hint-invalid">
-                                        등록 가능한 파일 용량을 초과하였습니다.<br>
-                                        20MB 미만의 파일만 등록할 수 있습니다.
-                                    </p>
-                                </li>
-                                <li>
-                                    <div class="file-info m-column">
-                                        <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
-                                        <div class="btn-wrap">
-                                            <button type="button" class="krds-btn medium text">다운로드 <i
-                                                    class="svg-icon ico-down"></i></button>
-                                            <button type="button" class="krds-btn medium text">바로보기 <i
-                                                    class="svg-icon ico-angle right"></i></button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="upload-delete-btn">
-                                <button type="button" class="krds-btn xsmall tertiary">전체 파일 삭제<i
-                                        class="svg-icon ico-angle right"></i></button>
-                            </div>
-                        </div>
-                        <!-- //파일 리스트 영역 -->
-                    </div>
-                    <!-- //file upload -->
-                </div>
-            </div>
+        <div class="chart_wrap">
+            <p>Line Chart</p>
+            <div id="lineChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Zoomable Timeseries</p>
+            <div id="ZoomableChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Dynamic Updating</p>
+            <div id="dynamicChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Area chart</p>
+            <div id="areaChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Column Basic chart</p>
+            <div id="columnBasicChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Column Stacked chart</p>
+            <div id="columnStackedChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Bar chart</p>
+            <div id="barChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Pie chart</p>
+            <div id="pieChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Donut chart</p>
+            <div id="DonutChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Rader chart</p>
+            <div id="RaderChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Polar chart</p>
+            <div id="PolarChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Radius chart</p>
+            <div id="RadiusChart"></div>
+        </div>
+        <div class="chart_wrap">
+            <p>Spark Line chart</p>
+            <div id="sparkChart"></div>
         </div>
     </div>
 
-
-    <!-- footer -->
-    <footer id="krds-footer"></footer>
-    <!-- //footer -->
+    <footer></footer>
     <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/apexChart.js"></script>
+    <script src="/js/data.js"></script>
+
+    <script>
+
+        var lineOptions = {
+            series: [
+                {
+                    name: "High - 2013",
+                    data: [28, 29, 33, 36, 32, 32, 33]
+                },
+                {
+                    name: "Low - 2013",
+                    data: [12, 11, 14, 18, 17, 13, 13]
+                }
+            ],
+            chart: {
+                height: 350,
+                type: 'line',
+                dropShadow: {
+                    enabled: true,
+                    color: '#000',
+                    top: 18,
+                    left: 7,
+                    blur: 10,
+                    opacity: 0.5
+                },
+                zoom: {
+                    enabled: false
+                },
+                toolbar: {
+                    show: false
+                }
+            },
+            colors: ['#77B6EA', '#545454'],
+            dataLabels: {
+                enabled: true,
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            title: {
+                text: 'Average High & Low Temperature',
+                align: 'left'
+            },
+            grid: {
+                borderColor: '#e7e7e7',
+                row: {
+                    colors: ['#f3f3f3', 'transparent'],
+                    opacity: 0.5
+                },
+            },
+            markers: {
+                size: 1
+            },
+            xaxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                title: {
+                    text: 'Month'
+                }
+            },
+            yaxis: {
+                title: {
+                    text: 'Temperature'
+                },
+                min: 5,
+                max: 40
+            },
+            legend: {
+                position: 'top',
+                horizontalAlign: 'right',
+                floating: true,
+                offsetY: -25,
+                offsetX: -5
+            }
+        };
+
+        var lineChart = new ApexCharts(document.querySelector("#lineChart"), lineOptions);
+        lineChart.render();
+
+
+        var ts2 = 1484418600000;
+        var dates = [];
+        var spikes = [5, -5, 3, -3, 8, -8]
+        for (var i = 0; i < 120; i++) {
+            ts2 = ts2 + 86400000;
+            var innerArr = [ts2, dataSeries[1][i].value];
+            dates.push(innerArr)
+        }
+
+        var zoomOptions = {
+            series: [{
+                name: 'XYZ MOTORS',
+                data: dates
+            }],
+            chart: {
+                type: 'area',
+                stacked: false,
+                height: 350,
+                zoom: {
+                    type: 'x',
+                    enabled: true,
+                    autoScaleYaxis: true
+                },
+                toolbar: {
+                    autoSelected: 'zoom'
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            markers: {
+                size: 0,
+            },
+            title: {
+                text: 'Stock Price Movement',
+                align: 'left'
+            },
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shadeIntensity: 1,
+                    inverseColors: false,
+                    opacityFrom: 0.5,
+                    opacityTo: 0,
+                    stops: [0, 90, 100]
+                },
+            },
+            yaxis: {
+                labels: {
+                    formatter: function (val) {
+                        return (val / 1000000).toFixed(0);
+                    },
+                },
+                title: {
+                    text: 'Price'
+                },
+            },
+            xaxis: {
+                type: 'datetime',
+            },
+            tooltip: {
+                shared: false,
+                y: {
+                    formatter: function (val) {
+                        return (val / 1000000).toFixed(0)
+                    }
+                }
+            }
+        };
+
+        var zoomChart = new ApexCharts(document.querySelector("#ZoomableChart"), zoomOptions);
+        zoomChart.render();
+
+
+
+        var dynamicLastDate = 0;
+        var dynamicData = []
+        var TICKINTERVAL = 86400000
+        let XAXISRANGE = 777600000
+        function getDayWiseTimeSeries(baseval, count, yrange) {
+            var i = 0;
+            while (i < count) {
+                var x = baseval;
+                var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+
+                dynamicData.push({
+                    x, y
+                });
+                dynamicLastDate = baseval
+                baseval += TICKINTERVAL;
+                i++;
+            }
+        }
+
+        getDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 10, {
+            min: 10,
+            max: 90
+        })
+
+        function getNewSeries(baseval, yrange) {
+            var newDate = baseval + TICKINTERVAL;
+            dynamicLastDate = newDate
+
+            for (var i = 0; i < dynamicData.length - 10; i++) {
+                dynamicData[i].x = newDate - XAXISRANGE - TICKINTERVAL
+                dynamicData[i].y = 0
+            }
+
+            dynamicData.push({
+                x: newDate,
+                y: Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
+            })
+        }
+
+        var dynamicOptions = {
+            series: [{
+                data: dynamicData.slice()
+            }],
+            chart: {
+                id: 'realtime',
+                height: 350,
+                type: 'line',
+                animations: {
+                    enabled: true,
+                    easing: 'linear',
+                    dynamicAnimation: {
+                        speed: 1000
+                    }
+                },
+                toolbar: {
+                    show: false
+                },
+                zoom: {
+                    enabled: false
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            title: {
+                text: 'Dynamic Updating Chart',
+                align: 'left'
+            },
+            markers: {
+                size: 0
+            },
+            xaxis: {
+                type: 'datetime',
+                range: XAXISRANGE,
+            },
+            yaxis: {
+                max: 100
+            },
+            legend: {
+                show: false
+            },
+        };
+
+        var dynamicChart = new ApexCharts(document.querySelector("#dynamicChart"), dynamicOptions);
+        dynamicChart.render();
+
+        var intervalRuns = 0;
+        var interval = window.setInterval(function () {
+            intervalRuns++
+            getNewSeries(dynamicLastDate, {
+                min: 10,
+                max: 90
+            })
+
+            dynamicChart.updateSeries([{
+                data: dynamicData
+            }])
+
+            if (intervalRuns === 2 && window.isATest === true) {
+                clearInterval(interval)
+            }
+        }, 1000)
+
+
+        var areaOptions = {
+            series: [{
+                name: 'series1',
+                data: [31, 40, 28, 51, 42, 109, 100]
+            }, {
+                name: 'series2',
+                data: [11, 32, 45, 32, 34, 52, 41]
+            }],
+            chart: {
+                height: 350,
+                type: 'area'
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth'
+            },
+            xaxis: {
+                type: 'datetime',
+                categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+            },
+            tooltip: {
+                x: {
+                    format: 'dd/MM/yy HH:mm'
+                },
+            },
+        };
+
+        var areaChart = new ApexCharts(document.querySelector("#areaChart"), areaOptions).render();
+
+
+
+        var columnBasicoptions = {
+            series: [{
+                name: 'Net Profit',
+                data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+            }, {
+                name: 'Revenue',
+                data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+            }, {
+                name: 'Free Cash Flow',
+                data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+            }],
+            chart: {
+                type: 'bar',
+                height: 350
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '55%',
+                    borderRadius: 5,
+                    borderRadiusApplication: 'end'
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                width: 2,
+                colors: ['transparent']
+            },
+            xaxis: {
+                categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+            },
+            yaxis: {
+                title: {
+                    text: '$ (thousands)'
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return "$ " + val + " thousands"
+                    }
+                }
+            }
+        };
+
+        var columnBasicChart = new ApexCharts(document.querySelector("#columnBasicChart"), columnBasicoptions);
+        columnBasicChart.render();
+
+
+        var columnStackedoptions = {
+            series: [{
+                name: 'PRODUCT A',
+                data: [44, 55, 41, 67, 22, 43, 21, 49]
+            }, {
+                name: 'PRODUCT B',
+                data: [13, 23, 20, 8, 13, 27, 33, 12]
+            }, {
+                name: 'PRODUCT C',
+                data: [11, 17, 15, 15, 21, 14, 15, 13]
+            }],
+            chart: {
+                type: 'bar',
+                height: 350,
+                stacked: true,
+                stackType: '100%'
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    legend: {
+                        position: 'bottom',
+                        offsetX: -10,
+                        offsetY: 0
+                    }
+                }
+            }],
+            xaxis: {
+                categories: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4', '2012 Q1', '2012 Q2',
+                    '2012 Q3', '2012 Q4'
+                ],
+            },
+            fill: {
+                opacity: 1
+            },
+            legend: {
+                position: 'right',
+                offsetX: 0,
+                offsetY: 50
+            },
+        };
+
+        var columnStackedchart = new ApexCharts(document.querySelector("#columnStackedChart"), columnStackedoptions);
+        columnStackedchart.render();
+
+
+        var barOptions = {
+            series: [{
+                name: 'Marine Sprite',
+                data: [44, 55, 41, 37, 22, 43, 21]
+            }, {
+                name: 'Striking Calf',
+                data: [53, 32, 33, 52, 13, 43, 32]
+            }, {
+                name: 'Tank Picture',
+                data: [12, 17, 11, 9, 15, 11, 20]
+            }, {
+                name: 'Bucket Slope',
+                data: [9, 7, 5, 8, 6, 9, 4]
+            }, {
+                name: 'Reborn Kid',
+                data: [25, 12, 19, 32, 25, 24, 10]
+            }],
+            chart: {
+                type: 'bar',
+                height: 350,
+                stacked: true,
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                    dataLabels: {
+                        total: {
+                            enabled: true,
+                            offsetX: 0,
+                            style: {
+                                fontSize: '13px',
+                                fontWeight: 900
+                            }
+                        }
+                    }
+                },
+            },
+            stroke: {
+                width: 1,
+                colors: ['#fff']
+            },
+            title: {
+                text: 'Fiction Books Sales'
+            },
+            xaxis: {
+                categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014],
+                labels: {
+                    formatter: function (val) {
+                        return val + "K"
+                    }
+                }
+            },
+            yaxis: {
+                title: {
+                    text: undefined
+                },
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val + "K"
+                    }
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            legend: {
+                position: 'top',
+                horizontalAlign: 'left',
+                offsetX: 40
+            }
+        };
+
+        var barChart = new ApexCharts(document.querySelector("#barChart"), barOptions);
+        barChart.render();
+
+        var pieOptions = {
+            series: [44, 55, 13, 43, 22],
+            chart: {
+                width: 380,
+                type: 'pie',
+            },
+            labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }]
+        };
+
+        var pieChart = new ApexCharts(document.querySelector("#pieChart"), pieOptions);
+        pieChart.render();
+
+        var DonutOptions = {
+            series: [44, 55, 41, 17, 15],
+            chart: {
+                type: 'donut',
+                width: 500
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }]
+        };
+
+        var DonutChart = new ApexCharts(document.querySelector("#DonutChart"), DonutOptions);
+        DonutChart.render();
+
+        var RaderOptions = {
+            series: [{
+                name: 'Series 1',
+                data: [80, 50, 30, 40, 100, 20],
+            }, {
+                name: 'Series 2',
+                data: [20, 30, 40, 80, 20, 80],
+            }, {
+                name: 'Series 3',
+                data: [44, 76, 78, 13, 43, 10],
+            }],
+            chart: {
+                height: 350,
+                type: 'radar',
+                dropShadow: {
+                    enabled: true,
+                    blur: 1,
+                    left: 1,
+                    top: 1
+                }
+            },
+            title: {
+                text: 'Radar Chart - Multi Series'
+            },
+            stroke: {
+                width: 2
+            },
+            fill: {
+                opacity: 0.1
+            },
+            markers: {
+                size: 0
+            },
+            yaxis: {
+                stepSize: 20
+            },
+            xaxis: {
+                categories: ['2011', '2012', '2013', '2014', '2015', '2016']
+            }
+        };
+
+        var RaderChart = new ApexCharts(document.querySelector("#RaderChart"), RaderOptions);
+        RaderChart.render();
+
+        var Polaroptions = {
+            series: [14, 23, 21, 17, 15, 10, 12, 17, 21],
+            chart: {
+                type: 'polarArea',
+                width: 400
+            },
+            stroke: {
+                colors: ['#fff']
+            },
+            fill: {
+                opacity: 0.8
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 200
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }]
+        };
+
+        var PolarChart = new ApexCharts(document.querySelector("#PolarChart"), Polaroptions);
+        PolarChart.render();
+
+        var Radiusoptions = {
+            series: [44, 55, 67, 83],
+            chart: {
+                height: 350,
+                type: 'radialBar',
+            },
+            plotOptions: {
+                radialBar: {
+                    dataLabels: {
+                        name: {
+                            fontSize: '22px',
+                        },
+                        value: {
+                            fontSize: '16px',
+                        },
+                        total: {
+                            show: true,
+                            label: 'Total',
+                            formatter: function (w) {
+                                // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                                return 249
+                            }
+                        }
+                    }
+                }
+            },
+            labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],
+        };
+
+        var RadiusChart = new ApexCharts(document.querySelector("#RadiusChart"), Radiusoptions);
+        RadiusChart.render();
+
+
+
+        window.Apex = {
+            stroke: {
+                width: 3
+            },
+            markers: {
+                size: 0
+            },
+            tooltip: {
+                fixed: {
+                    enabled: true,
+                }
+            }
+        };
+
+        var randomizeArray = function (arg) {
+            var array = arg.slice();
+            var currentIndex = array.length,
+                temporaryValue, randomIndex;
+
+            while (0 !== currentIndex) {
+
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
+        var sparklineData = [47, 45, 54, 38, 56, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46];
+        var sparkoptions = {
+            series: [{
+                data: randomizeArray(sparklineData)
+            }],
+            chart: {
+                type: 'area',
+                height: 160,
+                sparkline: {
+                    enabled: true
+                },
+            },
+            stroke: {
+                curve: 'straight'
+            },
+            fill: {
+                opacity: 0.3,
+            },
+            yaxis: {
+                min: 0
+            },
+            colors: ['#DCE6EC'],
+            title: {
+                text: '$424,652',
+                offsetX: 0,
+                style: {
+                    fontSize: '24px',
+                }
+            },
+            subtitle: {
+                text: 'Sales',
+                offsetX: 0,
+                style: {
+                    fontSize: '14px',
+                }
+            }
+        };
+
+        var sparkChart = new ApexCharts(document.querySelector("#sparkChart"), sparkoptions);
+        sparkChart.render();
+
+    </script>
+
 </body>
 
 </html>

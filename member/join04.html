@@ -18,51 +18,53 @@
     </div>
     <header id="headerPc"></header>
     <header id="headerMobile"></header>
-    <div class="inner sub_content">
-        <nav>
-            <h2 id="subTitle">컴포넌트</h2>
-            <ul class="lnb-list" id="sideNav"></ul>
-        </nav>
-
-        <div class="page_wrap">
-            <div id="breadcrumb"></div>
-            <div class="page-title-wrap">
-                <h1 class="h-tit" id="pageTitle"></h1>
-            </div>
-        </div>
+    <div class="inner login_wrap">
+        <h1 class="sub_title">회원가입</h1>
 
         <ol class="step_wrap flex">
-            <li class="col-sm-4 active">
+            <li class="col-sm-4 done">
                 <span>
                     <em class="sr_only">현재단계</em>
                     <i class="step">1단계</i>
                     <span class="step_title">약관동의</span>
                 </span>
             </li>
-            <li class="col-sm-4">
+            <li class="col-sm-4 done">
                 <span>
                     <i class="step">2단계</i>
                     <span class="step_title">본인인증</span>
                 </span>
             </li>
-            <li class="col-sm-4">
+            <li class="col-sm-4 done">
                 <span>
                     <i class="step">3단계</i>
                     <span class="step_title">회원정보입력</span>
                 </span>
             </li>
-            <li class="">
+            <li class="active">
                 <span>
                     <i class="step">4단계</i>
                     <span class="step_title">가입완료</span>
                 </span>
             </li>
         </ol>
+
+        <div class="join_complete">
+            <h2>
+                <img src="/img/common/ico_success.svg" alt="">
+                회원가입이 완료되었습니다.
+            </h2>
+            <div class="btm_area_center">
+                <a href="/" class="btn btn_normal btn_light">홈으로 이동하기</a>
+                <a href="login.html" class="btn btn_normal btn_primary">로그인하기</a>
+            </div>
+        </div>
     </div>
 
     <footer></footer>
     <script src="/js/layout.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/module.js"></script>
 
 </body>
 

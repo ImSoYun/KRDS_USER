@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW KRDS USER</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="noriTop">
+        <div class="inner flex align">
+            <img src="/img/common/ico_flag.svg" alt="">
+            이 누리집은 대한민국 공식 전자정부 누리집입니다.
+        </div>
+    </div>
+    <header id="headerPc"></header>
+    <header id="headerMobile"></header>
+    <div class="inner sub_content">
+        <nav>
+            <h2 id="subTitle">컴포넌트</h2>
+            <ul class="lnb-list" id="sideNav"></ul>
+        </nav>
+
+        <div class="page_wrap">
+            <div id="breadcrumb"></div>
+            <div class="page-title-wrap">
+                <h1 class="h-tit" id="pageTitle"></h1>
+            </div>
+        </div>
+
+        <div class="input_wrap">
+            <div class="input_inner">
+                <h4 class="sub_tit">라디오</h4>
+
+                <div class="form_check">
+                    <input type="radio" name="rdo_1" id="rdo_1">
+                    <label for="rdo_1">기본</label>
+                </div>
+                <div class="form_check">
+                    <input type="radio" name="rdo_1" id="rdo_2" checked>
+                    <label for="rdo_2">선택됨</label>
+                </div>
+                <div class="form_check">
+                    <input type="radio" name="rdo_2" id="rdo_3" disabled>
+                    <label for="rdo_3">비활성화</label>
+                </div>
+                <div class="form_check">
+                    <input type="radio" name="rdo_2" id="rdo_4" checked disabled>
+                    <label for="rdo_4">비활성화 선택됨</label>
+                </div>
+            </div>
+            <div class="input_inner">
+                <h4 class="sub_tit">체크박스</h4>
+                <div class="form_check">
+                    <input type="checkbox" name="chk_1" id="chk_1">
+                    <label for="chk_1">기본</label>
+                </div>
+                <div class="form_check">
+                    <input type="checkbox" name="chk_1" id="chk_2" checked>
+                    <label for="chk_2">선택됨</label>
+                </div>
+                <div class="form_check">
+                    <input type="checkbox" name="chk_2" id="chk_3" disabled>
+                    <label for="chk_3">비활성화</label>
+                </div>
+                <div class="form_check">
+                    <input type="checkbox" name="chk_2" id="chk_4" checked disabled>
+                    <label for="chk_4">비활성화 선택됨</label>
+                </div>
+            </div>
+            <div class="input_inner">
+                <div class="form_type_01">
+                    <label for="type01Email">Email</label>
+                    <input type="email" class="form_control" id="type01Email" placeholder="이메일을 입력해주세요.">
+                </div>
+                <div class="form_type_01">
+                    <label for="type01Password">Password</label>
+                    <input type="password" class="form_control" id="type01Password" placeholder="비밀번호를 입력해주세요.">
+                </div>
+                <div class="form_type_01">
+                    <label for="type01Tel">Tel</label>
+                    <input type="tel" class="form_control" id="type01Tel" placeholder="연락처를 입력해주세요(숫자만 입력)."
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                </div>
+                <div class="form_type_01">
+                    <label for="type01Input">Input + Button</label>
+                    <div class="form_wrap">
+                        <input type="text" class="form_control" id="type01Input" placeholder="Text">
+                        <button class="btn btn_light"><i class="svg_icon ico_sch"></i></button>
+                    </div>
+                </div>
+                <div class="form_type_01">
+                    <label for="type01Textarea">Textarea</label>
+                    <textarea name="" class="form_control" id="type01Textarea" placeholder="Textarea"></textarea>
+                </div>
+            </div>
+            <div class="input_inner">
+                <div class="form_type_02">
+                    <label for="type02Email">Email</label>
+                    <input type="email" class="form_control" id="type02Email" placeholder="이메일을 입력해주세요.">
+                </div>
+                <div class="form_type_02">
+                    <label for="type02Password">Password</label>
+                    <input type="password" class="form_control" id="type02Password" placeholder="비밀번호를 입력해주세요.">
+                </div>
+                <div class="form_type_02">
+                    <label for="type02Tel">Tel</label>
+                    <input type="tel" class="form_control" id="type02Tel" placeholder="연락처를 입력해주세요(숫자만 입력)."
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                </div>
+                <div class="form_type_02">
+                    <label for="type02Input">Input + Button</label>
+                    <div class="form_wrap">
+                        <input type="text" class="form_control" id="type02Input" placeholder="Text">
+                        <button class="btn btn_light"><i class="svg_icon ico_sch"></i></button>
+                    </div>
+                </div>
+                <div class="form_type_02">
+                    <label for="type02Textarea">Textarea</label>
+                    <textarea name="" class="form_control" id="type02Textarea" placeholder="Textarea"></textarea>
+                </div>
+            </div>
+            <div class="input_inner">
+                <div class="form_type_03">
+                    <label for="type03Email">Email</label>
+                    <input type="email" class="form_control" id="type03Email" placeholder="이메일을 입력해주세요.">
+                </div>
+                <div class="form_type_03">
+                    <label for="type03Password">Password</label>
+                    <input type="password" class="form_control" id="type03Password" placeholder="비밀번호를 입력해주세요.">
+                </div>
+                <div class="form_type_03">
+                    <label for="type03Tel">Tel</label>
+                    <input type="tel" class="form_control" id="type03Tel" placeholder="연락처를 입력해주세요(숫자만 입력)."
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                </div>
+                <div class="form_type_03">
+                    <label for="type03Input">Input + Button</label>
+                    <div class="form_wrap">
+                        <input type="text" class="form_control" id="type03Input" placeholder="Text">
+                        <button class="btn btn_light"><i class="svg_icon ico_sch"></i></button>
+                    </div>
+                </div>
+                <div class="form_type_03">
+                    <label for="type03Textarea">Textarea</label>
+                    <textarea name="" class="form_control" id="type03Textarea" placeholder="Textarea"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/module.js"></script>
+
+</body>
+
+</html>

@@ -1,123 +1,120 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
-
-    <script defer src="https://cdn.jsdelivr.net/npm/krds-uiux@1.0.3/resources/cdn/krds.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <title>NEW KRDS USER</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <!-- 건너뛰기 링크 -->
-    <div id="krds-skip-link">
-        <a href="#breadcrumb">본문 바로가기</a>
-    </div>
-    <!-- //건너뛰기 링크 -->
-    <!-- masthead -->
-    <div id="krds-masthead">
-        <div class="toggle-wrap">
-            <div class="toggle-head">
-                <div class="inner">
-                    <span class="nuri-txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
-                </div>
-            </div>
+    <div id="noriTop">
+        <div class="inner flex align">
+            <img src="/img/common/ico_flag.svg" alt="">
+            이 누리집은 대한민국 공식 전자정부 누리집입니다.
         </div>
     </div>
-    <!-- //masthead -->
-
-    <!-- header -->
-    <div id="headerWrap"></div>
-    <!-- //header -->
-
+    <header id="headerPc"></header>
+    <header id="headerMobile"></header>
     <div class="inner sub_content">
-        <!-- side navigation -->
-        <nav class="krds-side-navigation">
-            <h2 class="lnb-tit"></h2>
-            <!-- lnb-list -->
-            <ul class="lnb-list" role="menubar" id="sideNav"></ul>
-            <!-- //lnb-list -->
+        <nav>
+            <h2 id="subTitle">컴포넌트</h2>
+            <ul class="lnb-list" id="sideNav"></ul>
         </nav>
-        <!-- //side navigation -->
-
 
         <div class="page_wrap">
-            <!-- breadcrumb -->
-            <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb"></nav>
-
+            <div id="breadcrumb"></div>
             <div class="page-title-wrap">
                 <h1 class="h-tit" id="pageTitle"></h1>
             </div>
+        </div>
 
-            <div class="bbs_view_03">
-                <div class="bbs_view_title">
-                    <h2>게시판 제목</h2>
-                    <dl>
-                        <dt>2025.01.01</dt>
-                        <dd>
-                            <a href="#;"><img src="/img/icon/icon_link.svg" alt=""></a>
-                            <a href="#;"><img src="/img/icon/icon_kakao.svg" alt=""></a>
-                            <a href="#;"><img src="/img/icon/icon_print.svg" alt=""></a>
-                            <a href="#;"><img src="/img/icon/icon_mail.svg" alt=""></a>
-                        </dd>
-                    </dl>
-                </div>
-                <div class="bbs_view_body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo luctus elit vel ornare.
-                    Pellentesque sodales, mi in ornare congue, quam velit tincidunt mauris, et euismod felis nulla id
-                    lorem. Curabitur finibus molestie posuere. Duis consectetur nec lacus ac condimentum. Nunc in mollis
-                    nisl, nec cursus tortor. Nullam vitae tellus lectus. Nulla id quam vel arcu euismod porttitor.
-                    Vestibulum pellentesque, sapien id venenatis dapibus, leo purus fringilla ipsum, eget euismod lorem
-                    ligula quis dui. Maecenas volutpat consequat quam in iaculis. Vestibulum venenatis metus sed euismod
-                    sagittis. Fusce vestibulum, neque vitae interdum venenatis, arcu ligula fermentum sem, at faucibus
-                    erat risus sed turpis.
-
-                    Fusce sed feugiat mauris. Nullam placerat ut enim ut euismod. Cras tincidunt a mi ut fringilla.
-                    Aliquam interdum magna id venenatis elementum. Phasellus in tristique tortor. Aliquam imperdiet
-                    dolor a mauris consequat elementum. Nulla blandit sodales arcu aliquet rhoncus. Praesent quis
-                    viverra ipsum, vel luctus mi. Mauris sed mauris vel ante lacinia ornare id eu lorem. Fusce sit amet
-                    vehicula magna. Curabitur ullamcorper ex nisl, eget dignissim quam condimentum vitae. Fusce quis
-                    urna condimentum, tincidunt arcu at, ornare leo.
-
-                    Morbi ut scelerisque orci. Donec eleifend congue elit quis condimentum. Nulla aliquam porta metus,
-                    eget sollicitudin lacus faucibus sed. Nulla vel lacus eu purus finibus tempor eu eget magna. Duis
-                    vitae nibh fermentum, posuere tellus sit amet, posuere justo. Suspendisse urna ipsum, convallis in
-                    imperdiet sit amet, dapibus sed enim. Integer aliquet posuere sapien non feugiat. Curabitur
-                    scelerisque bibendum felis, eu consectetur turpis pellentesque at. Mauris nec laoreet dolor. Mauris
-                    ultrices vitae felis eget mollis. Vestibulum nunc felis, efficitur sed nisl non, mollis sagittis
-                    erat. Pellentesque augue elit, aliquam imperdiet dignissim sed, tristique sed massa.
-
-                    Quisque lacinia dui sed augue ullamcorper pretium. Fusce id cursus felis, id vehicula nulla. Proin
-                    porta porttitor sagittis. Aliquam imperdiet efficitur diam, eget posuere metus sagittis egestas. Ut
-                    eget blandit tortor. Nunc non facilisis neque, vitae placerat dolor. Donec vehicula pharetra leo,
-                    interdum convallis metus tempor non. Curabitur lacinia justo id sem aliquet porta. Mauris varius
-                    porttitor elementum. Vivamus maximus neque eget dignissim accumsan. Aliquam ultricies lacus nunc,
-                    sit amet tristique quam hendrerit non. Donec ac augue venenatis, accumsan lorem malesuada, imperdiet
-                    eros. Nunc convallis vitae ante eu aliquam. Phasellus ultricies mauris cursus mi rhoncus
-                    consectetur. Aliquam faucibus finibus sollicitudin. Vestibulum vel sagittis ligula, vitae egestas
-                    elit.
-
-                    Vestibulum at viverra arcu. Nullam vel pulvinar orci, sit amet tempus est. Curabitur lorem nunc,
-                    pellentesque eu ultrices ac, placerat quis elit. Phasellus commodo lorem at blandit rutrum. Aenean
-                    ornare, dolor quis convallis vehicula, tellus nisl fermentum leo, vitae venenatis mi libero in elit.
-                    Vivamus porttitor diam in rutrum hendrerit. Proin ut nibh eu neque dictum posuere.
-                </div>
-                <div class="bbs_view_foot">
-                    <a href="#;"><i class="arrow_icon prev_icon"></i>이전 글</a>
-                    <a href="#;" class="krds-btn large tertiary">목록으로</a>
-                    <a href="#;">다음 글<i class="arrow_icon next_icon"></i></a>
+        <div class="search_top_box">
+            <div class="search_inner">
+                <label for="ntt_type">카테고리</label>
+                <select name="" id="">
+                    <option value="">전체</option>
+                    <option value="E">행사</option>
+                    <option value="N">공지</option>
+                    <option value="U">업데이트</option>
+                </select>
+            </div>
+            <div class="search_inner">
+                <label for="">검색어</label>
+                <div class="relative">
+                    <input type="text" id="searchWrd" placeholder="키워드를 입력해주세요." title="키워드 입력">
+                    <button type="button" class="icon">
+                        <span class="sr_only">검색</span>
+                        <i class="svg_icon ico_sch"></i>
+                    </button>
                 </div>
             </div>
         </div>
+
+        <p class="total_count">총 <b>5</b> 건</p>
+        <div class="bbs_view_03">
+            <div class="bbs_view_title">
+                <h2>게시판 제목</h2>
+                <dl>
+                    <dt>2025.01.01</dt>
+                    <dd>
+                        <a href="#;"><img src="/img/common/icon_link.svg" alt=""></a>
+                        <a href="#;"><img src="/img/common/icon_kakao.svg" alt=""></a>
+                        <a href="#;"><img src="/img/common/icon_print.svg" alt=""></a>
+                        <a href="#;"><img src="/img/common/icon_mail.svg" alt=""></a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="bbs_view_body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo luctus elit vel ornare.
+                Pellentesque sodales, mi in ornare congue, quam velit tincidunt mauris, et euismod felis nulla id
+                lorem. Curabitur finibus molestie posuere. Duis consectetur nec lacus ac condimentum. Nunc in mollis
+                nisl, nec cursus tortor. Nullam vitae tellus lectus. Nulla id quam vel arcu euismod porttitor.
+                Vestibulum pellentesque, sapien id venenatis dapibus, leo purus fringilla ipsum, eget euismod lorem
+                ligula quis dui. Maecenas volutpat consequat quam in iaculis. Vestibulum venenatis metus sed euismod
+                sagittis. Fusce vestibulum, neque vitae interdum venenatis, arcu ligula fermentum sem, at faucibus
+                erat risus sed turpis.
+
+                Fusce sed feugiat mauris. Nullam placerat ut enim ut euismod. Cras tincidunt a mi ut fringilla.
+                Aliquam interdum magna id venenatis elementum. Phasellus in tristique tortor. Aliquam imperdiet
+                dolor a mauris consequat elementum. Nulla blandit sodales arcu aliquet rhoncus. Praesent quis
+                viverra ipsum, vel luctus mi. Mauris sed mauris vel ante lacinia ornare id eu lorem. Fusce sit amet
+                vehicula magna. Curabitur ullamcorper ex nisl, eget dignissim quam condimentum vitae. Fusce quis
+                urna condimentum, tincidunt arcu at, ornare leo.
+
+                Morbi ut scelerisque orci. Donec eleifend congue elit quis condimentum. Nulla aliquam porta metus,
+                eget sollicitudin lacus faucibus sed. Nulla vel lacus eu purus finibus tempor eu eget magna. Duis
+                vitae nibh fermentum, posuere tellus sit amet, posuere justo. Suspendisse urna ipsum, convallis in
+                imperdiet sit amet, dapibus sed enim. Integer aliquet posuere sapien non feugiat. Curabitur
+                scelerisque bibendum felis, eu consectetur turpis pellentesque at. Mauris nec laoreet dolor. Mauris
+                ultrices vitae felis eget mollis. Vestibulum nunc felis, efficitur sed nisl non, mollis sagittis
+                erat. Pellentesque augue elit, aliquam imperdiet dignissim sed, tristique sed massa.
+
+                Quisque lacinia dui sed augue ullamcorper pretium. Fusce id cursus felis, id vehicula nulla. Proin
+                porta porttitor sagittis. Aliquam imperdiet efficitur diam, eget posuere metus sagittis egestas. Ut
+                eget blandit tortor. Nunc non facilisis neque, vitae placerat dolor. Donec vehicula pharetra leo,
+                interdum convallis metus tempor non. Curabitur lacinia justo id sem aliquet porta. Mauris varius
+                porttitor elementum. Vivamus maximus neque eget dignissim accumsan. Aliquam ultricies lacus nunc,
+                sit amet tristique quam hendrerit non. Donec ac augue venenatis, accumsan lorem malesuada, imperdiet
+                eros. Nunc convallis vitae ante eu aliquam. Phasellus ultricies mauris cursus mi rhoncus
+                consectetur. Aliquam faucibus finibus sollicitudin. Vestibulum vel sagittis ligula, vitae egestas
+                elit.
+
+                Vestibulum at viverra arcu. Nullam vel pulvinar orci, sit amet tempus est. Curabitur lorem nunc,
+                pellentesque eu ultrices ac, placerat quis elit. Phasellus commodo lorem at blandit rutrum. Aenean
+                ornare, dolor quis convallis vehicula, tellus nisl fermentum leo, vitae venenatis mi libero in elit.
+                Vivamus porttitor diam in rutrum hendrerit. Proin ut nibh eu neque dictum posuere.
+            </div>
+            <div class="bbs_view_foot">
+                <a href="#;"><i class="arrow_icon prev_icon"></i>이전 글</a>
+                <a href="#;" class="btn btn_normal btn_light">목록으로</a>
+                <a href="#;">다음 글<i class="arrow_icon next_icon"></i></a>
+            </div>
+        </div>
     </div>
-
-
-    <!-- footer -->
-    <footer id="krds-footer"></footer>
-    <!-- //footer -->
+    <footer></footer>
     <script src="/js/layout.js"></script>
     <script src="/js/script.js"></script>
 </body>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW KRDS USER</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="noriTop">
+        <div class="inner flex align">
+            <img src="/img/common/ico_flag.svg" alt="">
+            이 누리집은 대한민국 공식 전자정부 누리집입니다.
+        </div>
+    </div>
+    <header id="headerPc"></header>
+    <header id="headerMobile"></header>
+    <div class="inner login_wrap">
+        <h1 class="sub_title">회원가입</h1>
+
+        <ol class="step_wrap flex">
+            <li class="col-sm-4 done">
+                <span>
+                    <em class="sr_only">현재단계</em>
+                    <i class="step">1단계</i>
+                    <span class="step_title">약관동의</span>
+                </span>
+            </li>
+            <li class="col-sm-4 done">
+                <span>
+                    <i class="step">2단계</i>
+                    <span class="step_title">본인인증</span>
+                </span>
+            </li>
+            <li class="col-sm-4 active">
+                <span>
+                    <i class="step">3단계</i>
+                    <span class="step_title">회원정보입력</span>
+                </span>
+            </li>
+            <li class="">
+                <span>
+                    <i class="step">4단계</i>
+                    <span class="step_title">가입완료</span>
+                </span>
+            </li>
+        </ol>
+
+        <h3 class="mini_title">회원정보입력</h3>
+        <div class="whitebox">
+            <ul class="info_list decimal">
+                <li><span class="point01">*</span> 는 필수 입력 항목이므로 반드시 기입해주시기 바랍니다.</li>
+                <li>비밀번호는 영대문자(A-Z, 26개), 영소문자(a-z, 26개), 숫자(0-9, 10개), 특수문자(22개) 중 3개 종류 이상으로 구성해야 합니다.</li>
+                <li>특수기호중에 10개, -, \', [,], ., -, &lt;, &gt;는 입력하실 수 없습니다. 입력 시 자동 삭제됩니다.</li>
+            </ul>
+        </div>
+
+        <h4 class="mini_title mgt6">아이디 및 패스워드</h4>
+        <div class="graybox member_form">
+            <ul>
+                <li>
+                    <label for="consult_name22">아이디 <b class="point01">*</b></label>
+                    <div class="form_wrap form_type_01">
+                        <input type="text" class="form_control" id="consult_name22" placeholder="아이디">
+                        <button class="btn btn_normal btn_primary_border">중복확인</button>
+                    </div>
+                    <p>영문(소문자) 또는 영문(소문자)와 숫자 조합하여 5~24자로 입력하세요.</p>
+                </li>
+                <li>
+                    <label for="consult_name23">비밀번호 <b class="point01">*</b></label>
+                    <div class="form_wrap form_type_01">
+                        <input type="password" class="form_control" id="consult_name23" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <p>영문(대/소문자), 숫자, 특수문자 중 3가지 이상의 종류로 조합하여 9~24자 이내로 입력하세요.<br>(단, <span class="point01"> -, \', [,],
+                            ., -, &lt;, &gt;</span> 제외)</p>
+                </li>
+                <li>
+                    <label for="consult_name24">비밀번호 확인 <b class="point01">*</b></label>
+                    <div class="form_wrap form_type_01">
+                        <input type="password" class="form_control" id="consult_name24" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <p>비밀번호를 다시 한 번 입력해주세요.</p>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <h4 class="mini_title mgt6">개인회원정보</h4>
+        <div class="graybox member-form">
+            <ul>
+                <li>
+                    <strong class="txt-bold">성명 <span class="point01">*<span class="sr_only">필수 입력
+                                항목</span></span></strong>
+                    <div class="form_wrap form_type_01">
+                        <input type="text" class="form_control" id="consult_name24" disabled value="홍길동">
+                    </div>
+                </li>
+                <li>
+                    <strong class="txt-bold">성별 <span class="point01">*<span class="sr_only">필수 입력
+                                항목</span></span></strong>
+
+                    <div class="form_wrap form_type_01">
+                        <div class="form_check">
+                            <input type="radio" name="rdo_1" id="rdo_1">
+                            <label for="rdo_1">여성</label>
+                        </div>
+                        <div class="form_check">
+                            <input type="radio" name="rdo_1" id="rdo_12">
+                            <label for="rdo_12">남성</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <strong class="txt-bold">생년월일 <span class="point01">*<span class="sr_only">필수 입력
+                                항목</span></span></strong>
+                    <div class="form_wrap form_type_01">
+                        <input type="text" class="form_control" id="" disabled value="2025-01-01">
+                    </div>
+                </li>
+                <li>
+                    <strong class="txt-bold">휴대전화번호 <span class="point01">*<span class="sr_only">필수 입력
+                                항목</span></span></strong>
+                    <div class="form_wrap form_type_01">
+                        <input type="text" class="form_control" id="" disabled value="010-1234-5678">
+                    </div>
+                </li>
+                <li><strong class="txt-bold">이메일 <span class="point01">*<span class="sr_only">필수 입력
+                                항목</span></span></strong>
+                    <div class="email_wrap form_wrap form_type_01">
+                        <input type="text" name="emailId" id="emailId" value="" autocomplete="off" class="form_control"
+                            title="이메일 ID 입력"> @
+                        <input type="text" name="emailDomain" id="emailDomain" value="" autocomplete="off" class="form_control"
+                            title="이메일 도메인 입력">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="btm_area">
+            <a href="join02.html" class="btn btn_normal btn_light">이전으로</a>
+            <a href="join04.html" class="btn btn_normal btn_primary">다음으로</a>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="/js/layout.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/module.js"></script>
+
+</body>
+
+</html>
