@@ -177,8 +177,8 @@
 .contextual_help.top .contextual_content:after { bottom : -20px; } 
 .contextual_help.top.center .contextual_content:after { left : 50%; transform : translateX(-50%); } 
 .contextual_help.top.left .contextual_content:after { right : 15px } 
-.contextual_help.bottom .contextual_content:after { top : -13px; } 
-.contextual_help.bottom.center .contextual_content:after { left : 50%; transform : rotate(315deg) translateX(-50%) } 
+.contextual_help.bottom .contextual_content:after { top : -12px; } 
+.contextual_help.bottom.center .contextual_content:after { left : 50%; transform : rotate(315deg) translateX(-50%); top : -16px } 
 .contextual_help.bottom.left .contextual_content:after { right : 15px } 
 
 
