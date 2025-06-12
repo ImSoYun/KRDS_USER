@@ -297,7 +297,7 @@ const headerSet = (cls) => {
         headerPc += `</ul>`;
     }
 
-    if (cls == 'type_nav01') {
+    if (cls == 'type_01') {
         headerPc += `<h1><a href="/"><img src="/img/common/ico_logo_krds.svg" alt=""></a></h1>
         <ul style="--length:6">`
 
@@ -352,7 +352,7 @@ const headerSet = (cls) => {
             </div>
         </div>`;
     }
-    if (cls == 'type_nav02') {
+    if (cls == 'type_02') {
         headerPc += `<h1><a href="/"><img src="/img/common/ico_logo_krds.svg" alt=""></a></h1>
         <ul style="--length:6">`
 
@@ -377,9 +377,7 @@ const headerSet = (cls) => {
             headerPc += `</ol>
             </li>`
         }
-        headerPc += `
-        </ul>
-
+        headerPc += `</ul>
         <div class="header_top">
             <div class="header_ctrl" id="changeLang">
                 <a href="#;" onclick="ClassCtrl.toggle(this.parentElement); ClassCtrl.removeAll('#settingView'); ">
@@ -407,10 +405,118 @@ const headerSet = (cls) => {
             </div>
         </div>`;
     }
-
     document.getElementById('headerPc').innerHTML = headerPc;
 }
-headerSet('type_krds');
+headerSet(localStorage.getItem('head'));
+
+const footerSet = (cls) => {
+    document.getElementsByTagName('footer')[0].className = cls;
+    let footerTxt = ``;
+    if ( cls == 'type_foot_krds') {
+    footerTxt += `<div class="footer_link">
+                <div class="inner">
+                    <a href="#;">메뉴1 <span><img src="/img/common/ico_plus.svg" alt=""></span></a>
+                    <a href="#;">메뉴1 <span><img src="/img/common/ico_plus.svg" alt=""></span></a>
+                    <a href="#;">메뉴1 <span><img src="/img/common/ico_plus.svg" alt=""></span></a>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="footer_top flex">
+                    <div>
+                        <h1>
+                            <a href="/"><img src="/img/common/ico_logo_krds.svg" alt=""></a>
+                        </h1>
+                        <p>(04383) 서울특별시 용산구 이태원로 22</p>
+                        <p><strong>대표전화</strong>1234-5678</p>
+                        <p><strong>FAX</strong>+82 1234-5678</p>
+                    </div>
+                    <div>
+                        <a href="#;">이용안내</a>
+                        <a href="#;">찾아오시는 길</a>
+                    </div>
+                </div>
+                <div class="footer_btm flex">
+                    <div>
+                        <a href="#;">이용안내</a>
+                        <a href="#;">개인정보처리방침</a>
+                        <a href="#;">저작권 정책</a>
+                    </div>
+                    <div>© 2023 National Health Insurance Service. All rights reserved.The Government of the
+                        Republic of
+                        Korea. All rights reserved.</div>
+                </div>
+            </div>
+        `;
+    }
+
+    if ( cls == 'type_foot_01'){
+        footerTxt += `
+        <div class="inner flex">
+            <h1>
+                <a href="/"><img src="/img/common/ico_logo_krds.svg" alt=""></a>
+            </h1>
+            <div>
+                (04383) 서울특별시 용산구 이태원로 22<br/>
+                대표전화1234-5678 / FAX+82 1234-5678 / email@email.co.kr
+            </div>
+            <div class="foot_link">
+                <p class="flex">
+                    <a href="#;">이용안내</a>
+                    <a href="#;">오시는길</a>
+                    <a href="#;">개인정보처리방침</a>
+                    <a href="#;">저작권 정책</a>
+                </p>
+            </div>
+        </div>
+        <div class="inner copyright mgt2">
+             © 2023 National Health Insurance Service.               All rights reserved. The Government of the Republic of Korea. All rights reserved.
+        </div>
+        `;
+    }
+
+     if ( cls == 'type_foot_02'){
+        footerTxt += `
+        <div class="inner flex align">
+            <h1>
+                <a href="/"><img src="/img/common/ico_logo_krds.svg" alt=""></a>
+            </h1>
+            <div>
+                (04383) 서울특별시 용산구 이태원로 22<br/>대표전화1234-5678 / FAX+82 1234-5678 / email@email.co.kr
+               <p class="flex">
+                    <a href="#;">이용안내</a>
+                    <a href="#;">오시는길</a>
+                    <a href="#;">개인정보처리방침</a>
+                    <a href="#;">저작권 정책</a>
+                </p>
+                © 2023 National Health Insurance Service. All rights reserved. The Government of the Republic of Korea. All rights reserved.
+            </div>
+        </div>
+        `;
+    }
+    document.getElementsByTagName('footer')[0].innerHTML = footerTxt;
+}
+footerSet('type_foot_krds');
+
+let optPanelTxt = `
+    <button id="panelToggle" onclick="document.getElementById('optPanel').classList.toggle('active')">MENU</button>
+    <div class="panel_inner">
+        <h2>Header Type</h2>
+        <select name="" id="headerChange">
+            <option value="type_krds">style 01</option>
+            <option value="type_01">style 02</option>
+            <option value="type_02">style 03</option>
+        </select>
+        <h2 class="mgt2">Footer Type</h2>
+        <select name="" id="footerChange">
+            <option value="type_foot_krds">style 01</option>
+            <option value="type_foot_01">style 02</option>
+            <option value="type_foot_02">style 03</option>
+        </select>
+    </div>
+`;
+document.getElementById('optPanel').innerHTML = optPanelTxt;
+
+
 
 function typeNavSlide() {
     const accButtons = document.querySelectorAll('.has_sub');
@@ -563,54 +669,6 @@ let headerMobile = `<div class="header_middle flex">
 document.getElementById('headerMobile').innerHTML = headerMobile;
 
 
-let footerTxt = `<div class="footer_link">
-            <div class="inner">
-                <a href="#;">메뉴1 <span><img src="/img/common/ico_plus.svg" alt=""></span></a>
-                <a href="#;">메뉴1 <span><img src="/img/common/ico_plus.svg" alt=""></span></a>
-                <a href="#;">메뉴1 <span><img src="/img/common/ico_plus.svg" alt=""></span></a>
-            </div>
-        </div>
-        <div class="inner">
-            <div class="footer_top flex">
-                <div>
-                    <h1>
-                        <a href="/"><img src="/img/common/ico_logo_krds.svg" alt=""></a>
-                    </h1>
-                    <p>(04383) 서울특별시 용산구 이태원로 22</p>
-                    <p><strong>대표전화</strong>1234-5678</p>
-                    <p><strong>FAX</strong>+82 1234-5678</p>
-                </div>
-                <div>
-                    <a href="#;">이용안내</a>
-                    <a href="#;">찾아오시는 길</a>
-                </div>
-            </div>
-            <div class="footer_btm flex">
-                <div>
-                    <a href="#;">이용안내</a>
-                    <a href="#;">개인정보처리방침</a>
-                    <a href="#;">저작권 정책</a>
-                </div>
-                <div>© 2023 National Health Insurance Service. All rights reserved.The Government of the
-                    Republic of
-                    Korea. All rights reserved.</div>
-            </div>
-        </div>
-        <div id="optPanel">
-            <button id="panelToggle" onclick="document.getElementById('optPanel').classList.toggle('active')">MENU</button>
-            <div class="panel_inner">
-                <h2>Header Type</h2>
-                <select name="" id="headerChange">
-                    <option value="type_krds">style 01</option>
-                    <option value="type_nav01">style 02</option>
-                    <option value="type_nav02">style 03</option>
-                </select>
-            </div>
-        </div>
-    `;
-document.getElementsByTagName('footer')[0].innerHTML = footerTxt;
-
-
 let compoNavTxt = ``;
 const setNavArr = (arr) => {
     compoNavTxt = ``;
@@ -655,28 +713,16 @@ const setNavArr = (arr) => {
     document.getElementById('sideNav').innerHTML = compoNavTxt;
 }
 
-
-
 function SideCtrl() {
     const sideNav = document.getElementById('sideNav');
-    if (sideNav !== null) {
-        const pathname = window.location.pathname.split('/')[1];
-        const subTitle = document.getElementById('subTitle');
-        switch (pathname) {
-            case "component":
-                setNavArr(NavArr[0].sub);
-                subTitle.innerHTML = NavArr[0].title;
-                break;
-            case "chart":
-                setNavArr(NavArr[1].sub);
-                subTitle.innerHTML = NavArr[1].title;
-                break;
-            case "bbs":
-                setNavArr(NavArr[2].sub);
-                subTitle.innerHTML = NavArr[2].title;
-                break;
-            default:
-                break;
+    const pathname = window.location.pathname.split('/')[1];
+    const subTitle = document.getElementById('subTitle');
+
+    if (sideNav) {
+        const navIndex = { component: 0, chart: 1, bbs: 2 }[pathname];
+        if (navIndex !== undefined) {
+            setNavArr(NavArr[navIndex].sub);
+            subTitle.innerHTML = NavArr[navIndex].title;
         }
     }
 
@@ -684,54 +730,41 @@ function SideCtrl() {
     const lnbItem = document.querySelectorAll('.lnb_item');
     const lnbToggle = document.querySelectorAll('.lnb_toggle');
 
-    document.addEventListener('DOMContentLoaded', () => {
-        lnbToggle.forEach((sub, idx) => {
-            sub.addEventListener('click', () => {
-                if (sub.classList.contains('active')) {
-                    sub.classList.remove('active');
-                    lnbItem[idx].classList.remove('active');
-                } else {
-                    lnbItem.forEach(i => i.classList.remove('active'));
-                    lnbToggle.forEach(i => i.classList.remove('active'));
-                    lnbItem[idx].classList.add('active');
-                    sub.classList.add('active');
-                }
-            });
+    lnbToggle.forEach((toggle, idx) => {
+        toggle.addEventListener('click', (e) => {
+            const isActive = toggle.classList.contains('active');
+            lnbToggle.forEach(t => t.classList.remove('active'));
+            lnbItem.forEach(i => i.classList.remove('active'));
+            if (!isActive) {
+                toggle.classList.add('active');
+                lnbItem[idx].classList.add('active');
+            }
+            e.currentTarget.parentElement.classList.toggle('active');
         });
     });
 
-
     subTitleTxt.forEach((sub, idx) => {
         sub.classList.remove('selected');
-        sub.addEventListener('click', (e) => {
+        sub.addEventListener('click', () => {
             localStorage.setItem('title', sub.innerHTML);
             subTitleTxt.forEach(s => s.classList.remove('selected'));
-
+            sub.classList.add('selected');
             document.getElementById('pageTitle').innerHTML = sub.innerHTML;
             document.getElementById('breadTitle').innerHTML = sub.innerHTML;
-            sub.classList.add('selected');
         });
-        if (sub.innerHTML == localStorage.getItem('title')) {
+
+        if (sub.innerHTML === localStorage.getItem('title')) {
             sub.classList.add('selected');
             setTimeout(() => {
                 const submenu = sub.closest('.lnb_submenu');
                 if (submenu) {
-                    sub.parentElement?.classList.add('active');
-                    submenu.parentElement?.classList.add('active');
-                    submenu.previousElementSibling?.classList.add('active');
+                    submenu.parentElement?.classList.add('active'); 
+                    submenu.previousElementSibling?.classList.add('active'); 
                 }
-            }, 500);
+            }, 200);
         }
     });
-
-    lnbToggle.forEach((e, idx) => {
-        e.addEventListener('click', (evt) => {
-            evt.currentTarget.parentElement.classList.toggle('active');
-        });
-    });
 }
-
-
 
 const breadcrumb = `
     <ol class="breadcrumb">
@@ -748,35 +781,65 @@ if (document.getElementById('breadcrumb') != undefined) {
 }
 
 
-const selectElement = document.getElementById('headerChange');
-selectElement.addEventListener('change', (evt) => {
+const headerElement = document.getElementById('headerChange');
+let headClass = localStorage.getItem('head')
+headerElement.addEventListener('change', (evt) => {
     headerSet(evt.target.value);
+    localStorage.setItem('head', evt.target.value);
     SideCtrl();
-    switch (evt.target.value) {
-        case "type_nav01":
-            typeNavSlide();
-            document.querySelector('body').classList.add('type_padding');
-            document.querySelector('body').classList.remove('active');
-            break;
+    targetValue(evt.target.value);
+});
 
-        case "type_nav02":
-            typeNavSlide();
-            document.querySelector('body').classList.add('type_padding');
-            document.querySelector('body').classList.remove('active');
-            break;
+const selectElement = document.getElementById('footerChange');
+let footClass = localStorage.getItem('foot')
+selectElement.addEventListener('change', (evt) => {
+    footerSet(evt.target.value);
+    localStorage.setItem('foot', evt.target.value);
+    SideCtrl();
+    targetFootValue(evt.target.value);
+});
 
-        case "type_krds":
-            document.querySelector('body').classList.remove('type_padding');
-            break;
+SideCtrl();
 
+window.onload = () => {
+    if ( localStorage.getItem('head') != null ){
+        document.getElementsByTagName('body')[0].classList.add(localStorage.getItem('head'));
+        headerSet(localStorage.getItem('head'));
+        SideCtrl();
+        targetValue(localStorage.getItem('head'));
+    }
+}
+
+
+function targetValue(data) {
+    const body = document.querySelector('body');
+    if (data === "type_01" || data === "type_02") {
+        typeNavSlide();
+        body.classList.add('type_padding');
+        body.classList.remove('active');
+    } else if (data === "type_krds") {
+        body.classList.remove('type_padding');
+    }
+}
+
+function targetFootValue(data) {
+    const footer = document.querySelector('footer');
+    switch (data) {
+        case "type_foot_01":
+            footer.classList.remove('type_foot_krds');
+            footer.classList.add('type_01');
+            break;
+        case "type_foot_02":
+            footer.classList.remove('type_01');
+            footer.classList.add('type_foot_02');
+            break;
+        case "type_foot_krds":
+            footer.classList.remove('type_foot_01', 'type_foot_02', 'type_padding');
+            break;
         default:
             break;
     }
-});
-SideCtrl();
-
-
-
+}
 
 
 
